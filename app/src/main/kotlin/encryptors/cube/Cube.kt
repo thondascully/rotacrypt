@@ -81,21 +81,30 @@ class Cube {
         return spiral
     }
 
-    private fun cycleSwap(indices: List<Int>, step_: Int = 1) {
+    private fun cycleSwap(indices: List<Int>) {
         val home = mutableListOf<Identifier>()
+        val step_ = indices.size / 4
         for (index in indices) {
             home.add(cube[index])
         }
         for (i in 0 until indices.size) {
-            cube[transformToSpiral(indices)[i]] = home[(i + step_) % indices.size]
+            cube[transformToSpiral(indices)[(i + step_) % indices.size]] = home[i]
         }
     }
 
-    public fun transformLEDGE() {
-        cycleSwap(listOf(36, 38, 40, 42))
-        cycleSwap(listOf(37, 39, 41, 43))
-        cycleSwap(listOf(0, 6, 9, 15, 45, 51, 31, 29), 2)
-        cycleSwap(listOf(7, 16, 52, 30))
+    public fun transformLEDGE(cc: Boolean = false) {
+        var cycles = listOf(
+            listOf(36, 38, 40, 42),
+            listOf(37, 39, 41, 43),
+            listOf(0, 6, 9, 15, 45, 51, 31, 29),
+            listOf(7, 16, 52, 30)
+        )
+
+        if (cc) cycles = cycles.map { it.reversed() }
+
+        for (cycle in cycles) {
+            cycleSwap(cycle)
+        }
     }
 
     private fun faceToIDXs(face: Array<Identifier>, idx: Int = 0): String {
