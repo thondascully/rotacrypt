@@ -32,11 +32,61 @@ class Cube {
     }
 
     /*
+
+    0 1 2
+    7 8 3   <---   <TOP FACE EXAMPLE>
+    6 5 4
     
-    LEFT FACE INDXS: 
+    TOP FACE INDXS: [0, 1, 2, 3, 4, 5, 6, 7, 8]
+    FRONT FACE IDXS: [9, 10, 11, 12, 13, 14, 15, 16, 17]
+    RIGHT FACE IDXS: [18, 19, 20, 21, 22, 23, 24, 25, 26]
+    BACK FACE IDXS: [27, 28, 29, 30, 31, 32, 33, 34, 35]
+    LEFT FACE IDXS: [36, 37, 38, 39, 40, 41, 42, 43, 44]
+    BOTTOM FACE IDXS: [45, 46, 47, 48, 49, 50, 51, 52, 53]
     
+    For a left clockwise rotation: 
+                CORNERS
+              36 38 40 42
+                   |
+                   V
+              38 40 42 36
+
+                 EDGES
+              37 39 41 43
+                   |
+                   V
+              39 41 43 37
+
+            ADJACENT CORNERS
+           0 6 9 15 45 51 31 29
+                   |
+                   V
+           9 15 45 51 31 29 0 6
+
+             ADJACENT EDGES
+               7 16 30 52
+                   |
+                   V
+               16 30 52 7
     
     */
+
+    private fun cycleSwap(indices: List<Int>, step: Int = 1) {
+        val temp = mutableListOf<Identifier>()
+        for (index in indices) {
+            temp.add(cube[index])
+        }
+        for (i in 0 until indices.size) {
+            cube[indices[i]] = temp[(i + step) % indices.size]
+        }
+    }
+
+    public fun transformLEDGE() {
+        cycleSwap(listOf(36, 38, 40, 42))
+        cycleSwap(listOf(37, 39, 41, 43))
+        cycleSwap(listOf(0, 6, 9, 15, 45, 51, 31, 29), 2)
+        cycleSwap(listOf(7, 16, 30, 52))
+    }
 
     private fun faceToIDXs(face: Array<Identifier>, idx: Int = 0): String {
         val builder = StringBuilder()
@@ -64,7 +114,7 @@ class Cube {
         val builder = StringBuilder()
 
         for (face in 0 until 6) {
-            builder.append(faceToIDXs(cube.sliceArray(face * 9 until (face + 1) * 9), face))
+            builder.append(faceToString(cube.sliceArray(face * 9 until (face + 1) * 9), face))
             builder.append("\n") 
         }
 

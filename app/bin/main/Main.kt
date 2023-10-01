@@ -28,4 +28,6 @@ fun main() = runBlocking {
 
     val cube = Cube()
     println("Initial state:\n$cube\n\n")
+    cube.transformLEDGE()
+    println("After LEDGE:\n$cube\n\n")
 }
