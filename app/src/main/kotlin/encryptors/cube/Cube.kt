@@ -4,6 +4,7 @@
  
 package encryptors
 
+import kotlin.math.floor
 import kotlin.random.Random
 
 // Up, Front, Right, Back, Left, Down (U=YELLOW, F=BLUE)
@@ -14,6 +15,7 @@ enum class Identifier {
 
 class Cube {
     private val cube = Array(54) { Identifier.UNDEF }
+    private val orderedFace = arrayOf(0, 1, 2, 7, 8, 3, 6, 5, 4)
     private val orderedColors = arrayOf(
         Identifier.YELLOW,
         Identifier.BLUE,
@@ -26,7 +28,7 @@ class Cube {
     init {
         for (face in 0 until 6) {
             for (unit in 0 until 9) {
-                cube[face * 9 + unit] = orderedColors[face]
+                cube[face * 9 + orderedFace[unit]] = orderedColors[face]
             }
         }
     }
@@ -71,30 +73,43 @@ class Cube {
     
     */
 
-    private fun cycleSwap(indices: List<Int>, step: Int = 1) {
-        val temp = mutableListOf<Identifier>()
+    private fun transformToSpiral(indices: List<Int>): List<Int> {
+        val spiral = mutableListOf<Int>()
         for (index in indices) {
-            temp.add(cube[index])
+            spiral.add(orderedFace.indexOf(index % 9) + (index - (index % 9)))
         }
+        return spiral
+    }
+
+    private fun cycleSwap(indices: List<Int>, step_: Int = 1) {
+        val home = mutableListOf<Identifier>()
+        for (index in indices) {
+            home.add(cube[index])
+        }
+        println(home)
         for (i in 0 until indices.size) {
-            cube[indices[i]] = temp[(i + step) % indices.size]
+            cube[transformToSpiral(indices)[i]] = home[(i + step_) % indices.size]
+            // 7 16 30 52
+            // 
         }
     }
 
     public fun transformLEDGE() {
-        cycleSwap(listOf(36, 38, 40, 42))
-        cycleSwap(listOf(37, 39, 41, 43))
-        cycleSwap(listOf(0, 6, 9, 15, 45, 51, 31, 29), 2)
+        //cycleSwap(listOf(36, 38, 40, 42))
+        //cycleSwap(listOf(37, 39, 41, 43))
+        //cycleSwap(listOf(0, 6, 9, 15, 45, 51, 31, 29), 2)
+        println(cube[7])
         cycleSwap(listOf(7, 16, 30, 52))
+        print(cube[7])
     }
 
     private fun faceToIDXs(face: Array<Identifier>, idx: Int = 0): String {
         val builder = StringBuilder()
         for (i in 0 until 9 step 3) {
             builder
-            .append(i + 9 * idx).append(" ")
-            .append(i + 1 + 9 * idx).append(" ")
-            .append(i + 2 + 9 * idx).append("\n")
+            .append(orderedFace[i + 0] + 9 * idx).append(" ")
+            .append(orderedFace[i + 1] + 9 * idx).append(" ")
+            .append(orderedFace[i + 2] + 9 * idx).append("\n")
         }
         return builder.toString()
     }
