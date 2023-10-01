@@ -26,6 +26,34 @@ public val orderedColors = arrayOf(
     Identifier.WHITE
 )
 
+fun movesToBits(moves: List<String>): String {
+    val moveToBit = mapOf(
+        "U" to "0000", "U'" to "0001",
+        "D" to "0010", "D'" to "0011",
+        "F" to "0100", "F'" to "0101",
+        "B" to "0110", "B'" to "0111",
+        "L" to "1000", "L'" to "1001",
+        "R" to "1010", "R'" to "1011"
+    )
+
+    val bits = StringBuilder()
+    for (move in moves.split(" ")) {
+        bits.append(moveToBit[move])
+    }
+    return bits.toString()
+}
+
+fun stringToMoveCompatibleChunks(text: String): List<String> {
+    val fours = mutableListOf<String>()
+    for (char in text) {
+        val binary = char.code.toString(2).padStart(8, '0')
+        fours.add(binary.substring(0, 4))
+        fours.add(binary.substring(4, 8))
+    }
+    return fourBitChunks
+}
+
+
 val faceToCyclesMap: Map<Face, List<List<Int>>> = mapOf(
     Face.BACK to listOf(
         listOf(27, 29, 31, 33),

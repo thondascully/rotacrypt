@@ -74,7 +74,7 @@ class Cube {
     override fun toString(): String {
         val builder = StringBuilder()
 
-        for (face in 0 until 1) {
+        for (face in 0 until 6) {
             builder.append(faceToString(cube.sliceArray(face * 9 until (face + 1) * 9), face))
             builder.append("\n") 
         }
