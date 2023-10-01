@@ -86,21 +86,16 @@ class Cube {
         for (index in indices) {
             home.add(cube[index])
         }
-        println(home)
         for (i in 0 until indices.size) {
             cube[transformToSpiral(indices)[i]] = home[(i + step_) % indices.size]
-            // 7 16 30 52
-            // 
         }
     }
 
     public fun transformLEDGE() {
-        //cycleSwap(listOf(36, 38, 40, 42))
-        //cycleSwap(listOf(37, 39, 41, 43))
-        //cycleSwap(listOf(0, 6, 9, 15, 45, 51, 31, 29), 2)
-        println(cube[7])
-        cycleSwap(listOf(7, 16, 30, 52))
-        print(cube[7])
+        cycleSwap(listOf(36, 38, 40, 42))
+        cycleSwap(listOf(37, 39, 41, 43))
+        cycleSwap(listOf(0, 6, 9, 15, 45, 51, 31, 29), 2)
+        cycleSwap(listOf(7, 16, 52, 30))
     }
 
     private fun faceToIDXs(face: Array<Identifier>, idx: Int = 0): String {
