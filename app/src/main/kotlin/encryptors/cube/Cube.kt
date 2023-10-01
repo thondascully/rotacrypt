@@ -22,7 +22,7 @@ class Cube {
     private fun transformToSpiral(indices: List<Int>): List<Int> {
         val spiral = mutableListOf<Int>()
         for (index in indices) {
-            spiral.add(orderedFace.indexOf(index % 9) + (index - (index % 9)))
+            spiral.add(orderedFace[(index % 9)] + (index - (index % 9)))
         }
         return spiral
     }
@@ -30,7 +30,8 @@ class Cube {
     private fun cycleSwap(indices: List<Int>) {
         val home = mutableListOf<Identifier>()
         val step_ = indices.size / 4
-        for (index in indices) {
+        val max = indices.maxOrNull()
+        for (index in transformToSpiral(indices)) {
             home.add(cube[index])
         }
         for (i in 0 until indices.size) {
@@ -59,17 +60,6 @@ class Cube {
         }
     }
 
-    private fun faceToIDXs(face: Array<Identifier>, idx: Int = 0): String {
-        val builder = StringBuilder()
-        for (i in 0 until 9 step 3) {
-            builder
-            .append(orderedFace[i + 0] + 9 * idx).append(" ")
-            .append(orderedFace[i + 1] + 9 * idx).append(" ")
-            .append(orderedFace[i + 2] + 9 * idx).append("\n")
-        }
-        return builder.toString()
-    }
-
     private fun faceToString(face: Array<Identifier>, idx: Int = 0): String {
         val builder = StringBuilder()
         for (i in 0 until 9 step 3) {
@@ -84,7 +74,7 @@ class Cube {
     override fun toString(): String {
         val builder = StringBuilder()
 
-        for (face in 0 until 6) {
+        for (face in 0 until 1) {
             builder.append(faceToString(cube.sliceArray(face * 9 until (face + 1) * 9), face))
             builder.append("\n") 
         }

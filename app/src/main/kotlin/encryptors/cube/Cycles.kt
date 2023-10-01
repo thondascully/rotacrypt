@@ -16,7 +16,7 @@ enum class Face {
     UP, FRONT, RIGHT, BACK, LEFT, DOWN
 }
 
-public val orderedFace = arrayOf(0, 1, 2, 7, 8, 3, 6, 5, 4)
+public val orderedFace = arrayOf(0, 1, 2, 5, 8, 7, 6, 3, 4)
 public val orderedColors = arrayOf(
     Identifier.YELLOW,
     Identifier.BLUE,
