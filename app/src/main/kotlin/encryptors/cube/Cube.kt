@@ -2,15 +2,20 @@
  * TEO || 2023
  */
  
-package encryptors
+package encryptors.cube
 
 import kotlin.math.floor
 import kotlin.random.Random
+import encryptors.cube.*
 
 // Up, Front, Right, Back, Left, Down (U=YELLOW, F=BLUE)
 // ABCD, IJKL, EFGH, MNOP, QRST, UVWX
 enum class Identifier {
     BLUE, GREEN, ORANGE, RED, YELLOW, WHITE, UNDEF
+}
+
+enum class Face {
+    UP, FRONT, RIGHT, BACK, LEFT, DOWN
 }
 
 class Cube {
@@ -92,62 +97,14 @@ class Cube {
         }
     }
 
-     public fun transformD(counterclockwise: Boolean = false) {
-        var cycles = listOf(
-            listOf(45, 47, 49, 51),
-            listOf(46, 48, 50, 52),
-            listOf(15, 13, 24, 22, 33, 31, 42, 40),
-            listOf(14, 21, 32, 41)
-        )
+    public fun transform(face: Face, counterclockwise: Boolean = false) {
+        val cycles = faceToCyclesMap[face] ?: return
+        var mutableCycles = cycles
 
-        if (counterclockwise) cycles = cycles.map { it.reversed() }
+        if (counterclockwise) 
+            mutableCycles = mutableCycles.map { it.reversed() }
 
-        for (cycle in cycles) {
-            cycleSwap(cycle)
-        }
-    }
-
-    public fun transformU(counterclockwise: Boolean = false) {
-        var cycles = listOf(
-            listOf(0, 2, 4, 6),
-            listOf(1, 3, 5, 7),
-            listOf(9, 11, 36, 38, 27, 29, 18, 20),
-            listOf(10, 37, 28, 19)
-        )
-
-        if (counterclockwise) cycles = cycles.map { it.reversed() }
-
-        for (cycle in cycles) {
-            cycleSwap(cycle)
-        }
-    }
-
-    public fun transformR(counterclockwise: Boolean = false) {
-        var cycles = listOf(
-            listOf(18, 20, 22, 24),
-            listOf(19, 21, 23, 25),
-            listOf(2, 4, 33, 27, 47, 49, 11, 13),
-            listOf(3, 34, 48, 12)
-        )
-
-        if (counterclockwise) cycles = cycles.map { it.reversed() }
-
-        for (cycle in cycles) {
-            cycleSwap(cycle)
-        }
-    }
-
-    public fun transformL(counterclockwise: Boolean = false) {
-        var cycles = listOf(
-            listOf(36, 38, 40, 42),
-            listOf(37, 39, 41, 43),
-            listOf(0, 6, 9, 15, 45, 51, 31, 29),
-            listOf(7, 16, 52, 30)
-        )
-
-        if (counterclockwise) cycles = cycles.map { it.reversed() }
-
-        for (cycle in cycles) {
+        for (cycle in mutableCycles) {
             cycleSwap(cycle)
         }
     }

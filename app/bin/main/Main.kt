@@ -7,6 +7,7 @@ package rotacrypt
 import kotlinx.coroutines.*
 import managers.*
 import encryptors.*
+import encryptors.cube.*
 import key.*
 import ops.*
 
@@ -28,7 +29,7 @@ fun main() = runBlocking {
 
     val cube = Cube()
     println("Initial state:\n$cube\n\n")
-    cube.transformL()
+    cube.transform(Face.UP)
     //cube.transformD()
     println("After LEDGE:\n$cube\n\n")
 }
