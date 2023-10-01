@@ -26,8 +26,6 @@ fun main() = runBlocking {
     //    manager.decryptFile("encrypted.txt", "decrypted.txt")
     //}
 
-    println("Hello")
-
     val cube = Cube()
     println("Initial state:\n$cube\n\n")
 }

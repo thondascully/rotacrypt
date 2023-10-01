@@ -31,10 +31,31 @@ class Cube {
         }
     }
 
-    private fun faceToString(face: Array<Identifier>): String {
+    /*
+    
+    LEFT FACE INDXS: 
+    
+    
+    */
+
+    private fun faceToIDXs(face: Array<Identifier>, idx: Int = 0): String {
         val builder = StringBuilder()
         for (i in 0 until 9 step 3) {
-            builder.append(face[i]).append(" ").append(face[i + 1]).append(" ").append(face[i + 2]).append("\n")
+            builder
+            .append(i + 9 * idx).append(" ")
+            .append(i + 1 + 9 * idx).append(" ")
+            .append(i + 2 + 9 * idx).append("\n")
+        }
+        return builder.toString()
+    }
+
+    private fun faceToString(face: Array<Identifier>, idx: Int = 0): String {
+        val builder = StringBuilder()
+        for (i in 0 until 9 step 3) {
+            builder
+            .append(face[i].toString().first()).append(" ")
+            .append(face[i + 1].toString().first()).append(" ")
+            .append(face[i + 2].toString().first()).append("\n")
         }
         return builder.toString()
     }
@@ -43,8 +64,8 @@ class Cube {
         val builder = StringBuilder()
 
         for (face in 0 until 6) {
-            builder.append(faceToString(cube.sliceArray(face * 9 until (face + 1) * 9)))
-            if (face < 5) builder.append("\n") 
+            builder.append(faceToIDXs(cube.sliceArray(face * 9 until (face + 1) * 9), face))
+            builder.append("\n") 
         }
 
         return builder.toString()
