@@ -38,6 +38,15 @@ class Cube {
         }
     }
 
+    public fun algorithm(raw_moves: String) {
+        raw_moves.split(" ").forEach { move ->
+            val counterclockwise = "'" in move
+            val move = move.filter { it.isLetter() }
+            val face = faceMap[move] ?: error("Invalid move: $move")
+            transform(face, counterclockwise)
+        }
+    }
+
     public fun transform(face: Face, counterclockwise: Boolean = false) {
         val cycles = faceToCyclesMap[face] ?: return
         var mutableCycles = cycles

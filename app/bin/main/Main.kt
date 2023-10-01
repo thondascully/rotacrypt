@@ -29,7 +29,7 @@ fun main() = runBlocking {
 
     val cube = Cube()
     println("Initial state:\n$cube\n\n")
-    cube.transform(Face.FRONT)
+    cube.algorithm("U U'")
     //cube.transformD()
     println("After LEDGE:\n$cube\n\n")
 }
