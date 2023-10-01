@@ -1,0 +1,35 @@
+/*
+ * TEO || 2023
+ */
+
+package rotacrypt
+
+import kotlinx.coroutines.*
+import managers.*
+import encryptors.*
+import key.*
+import ops.*
+
+fun main() = runBlocking {
+    //val keyGenerator = ECCHybridGen()
+    //val keyPair = keyGenerator.generateKeyPair()
+    //val twofishEncryptor = TwofishBase(keyPair.private.encoded)
+    //val fileOperator = Operator()
+    
+    //val manager = EncryptionManager(twofishEncryptor, fileOperator)
+    
+    //launch {
+    //    manager.encryptFile("input.txt", "encrypted.txt")
+    //}
+    
+    //launch {
+    //    manager.decryptFile("encrypted.txt", "decrypted.txt")
+    //}
+
+    println("Hello")
+
+    val cube = Cube()
+    println("Initial state:\n$cube\n\n")
+    cube.rotateLeftClockwise()
+    println("After rotating the left layer clockwise:\n\n$cube\n\n")
+}
