@@ -30,6 +30,4 @@ fun main() = runBlocking {
 
     val cube = Cube()
     println("Initial state:\n$cube\n\n")
-    cube.rotateLeftClockwise()
-    println("After rotating the left layer clockwise:\n\n$cube\n\n")
 }

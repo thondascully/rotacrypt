@@ -6,70 +6,35 @@ package encryptors
 
 import kotlin.random.Random
 
+// Up, Front, Right, Back, Left, Down (U=YELLOW, F=BLUE)
+// ABCD, IJKL, EFGH, MNOP, QRST, UVWX
+enum class Identifier {
+    BLUE, GREEN, ORANGE, RED, YELLOW, WHITE, UNDEF
+}
+
 class Cube {
-    private val cube = Array(6) { Array(3) { Array(3) { ' ' } } }
-    private val colors = "WRBOGY".toCharArray()
-    
+    private val cube = Array(54) { Identifier.UNDEF }
+    private val orderedColors = arrayOf(
+        Identifier.YELLOW,
+        Identifier.BLUE,
+        Identifier.RED,
+        Identifier.GREEN,
+        Identifier.ORANGE,
+        Identifier.WHITE
+    )
+
     init {
         for (face in 0 until 6) {
-            for (row in 0 until 3) {
-                for (col in 0 until 3) {
-                    cube[face][row][col] = colors[face]
-                }
+            for (unit in 0 until 9) {
+                cube[face * 9 + unit] = orderedColors[face]
             }
         }
     }
-    
 
-    // Rotates the specified row of the specified face 90 degrees clockwise
-    private fun rotateFaceClockwise(face: Int) {
-        val temp = cube[face][0][0]
-        cube[face][0][0] = cube[face][2][0]
-        cube[face][2][0] = cube[face][2][2]
-        cube[face][2][2] = cube[face][0][2]
-        cube[face][0][2] = temp
-    }
-
-    // Rotates the entire left layer 90 degrees clockwise
-    fun rotateLeftClockwise() {
-        rotateFaceClockwise(2)
-        val temp = cube[0][0][0]
-        cube[0][0][0] = cube[4][0][0]
-        cube[4][0][0] = cube[1][0][0]
-        cube[1][0][0] = cube[5][0][0]
-        cube[5][0][0] = temp
-    }
-
-    // Rotates the entire right layer 90 degrees clockwise
-    fun rotateRightClockwise() {
-        rotateFaceClockwise(3)
-        val temp = cube[0][0][2]
-        cube[0][0][2] = cube[5][0][2]
-        cube[5][0][2] = cube[1][0][2]
-        cube[1][0][2] = cube[4][0][2]
-        cube[4][0][2] = temp
-    }
-
-    // ... Similar methods for rotateUpClockwise, rotateDownClockwise, rotateFrontClockwise, rotateBackClockwise
-
-    fun randomize() {
-        for (i in 0 until 100) {
-            val face = Random.nextInt(6)
-            when (face) {
-                0 -> rotateLeftClockwise()
-                1 -> rotateRightClockwise()
-                // Add cases for other rotation methods
-            }
-        }
-    }
-    
-    private fun faceToString(face: Array<Array<Char>>): String {
+    private fun faceToString(face: Array<Identifier>): String {
         val builder = StringBuilder()
-        for (row in face) {
-            for (cell in row) {
-                builder.append("$cell ")
-            }
-            builder.append('\n')
+        for (i in 0 until 9 step 3) {
+            builder.append(face[i]).append(" ").append(face[i + 1]).append(" ").append(face[i + 2]).append("\n")
         }
         return builder.toString()
     }
@@ -77,24 +42,11 @@ class Cube {
     override fun toString(): String {
         val builder = StringBuilder()
 
-        // Print empty space, then Up face (index 2)
-        builder.append("${faceToString(cube[2])}")
-
-        // Print Left, Front, Right, Back faces (indices 4, 0, 5, 1)
-        val left = faceToString(cube[4]).split("\n")
-        val front = faceToString(cube[0]).split("\n")
-        val right = faceToString(cube[5]).split("\n")
-        val back = faceToString(cube[1]).split("\n")
-
-        for (i in 0 until 3) {
-            builder.append("${left[i]}  ${front[i]}  ${right[i]}  ${back[i]}\n")
+        for (face in 0 until 6) {
+            builder.append(faceToString(cube.sliceArray(face * 9 until (face + 1) * 9)))
+            if (face < 5) builder.append("\n") 
         }
-
-        // Print empty space, then Down face (index 3)
-        builder.append("${faceToString(cube[3])}")
 
         return builder.toString()
     }
-
-
 }
