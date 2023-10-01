@@ -92,7 +92,22 @@ class Cube {
         }
     }
 
-    public fun transformLEDGE(cc: Boolean = false) {
+    public fun transformR(counterclockwise: Boolean = false) {
+        var cycles = listOf(
+            listOf(18, 20, 22, 24),
+            listOf(19, 21, 23, 25),
+            listOf(2, 4, 11, 13, 47, 49, 33, 27),
+            listOf(3, 12, 48, 34)
+        )
+
+        if (counterclockwise) cycles = cycles.map { it.reversed() }
+
+        for (cycle in cycles) {
+            cycleSwap(cycle)
+        }
+    }
+
+    public fun transformL(counterclockwise: Boolean = false) {
         var cycles = listOf(
             listOf(36, 38, 40, 42),
             listOf(37, 39, 41, 43),
@@ -100,7 +115,7 @@ class Cube {
             listOf(7, 16, 52, 30)
         )
 
-        if (cc) cycles = cycles.map { it.reversed() }
+        if (counterclockwise) cycles = cycles.map { it.reversed() }
 
         for (cycle in cycles) {
             cycleSwap(cycle)
