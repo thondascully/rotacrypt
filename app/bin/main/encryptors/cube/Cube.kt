@@ -92,12 +92,42 @@ class Cube {
         }
     }
 
+     public fun transformD(counterclockwise: Boolean = false) {
+        var cycles = listOf(
+            listOf(45, 47, 49, 51),
+            listOf(46, 48, 50, 52),
+            listOf(15, 13, 24, 22, 33, 31, 42, 40),
+            listOf(14, 21, 32, 41)
+        )
+
+        if (counterclockwise) cycles = cycles.map { it.reversed() }
+
+        for (cycle in cycles) {
+            cycleSwap(cycle)
+        }
+    }
+
+    public fun transformU(counterclockwise: Boolean = false) {
+        var cycles = listOf(
+            listOf(0, 2, 4, 6),
+            listOf(1, 3, 5, 7),
+            listOf(9, 11, 36, 38, 27, 29, 18, 20),
+            listOf(10, 37, 28, 19)
+        )
+
+        if (counterclockwise) cycles = cycles.map { it.reversed() }
+
+        for (cycle in cycles) {
+            cycleSwap(cycle)
+        }
+    }
+
     public fun transformR(counterclockwise: Boolean = false) {
         var cycles = listOf(
             listOf(18, 20, 22, 24),
             listOf(19, 21, 23, 25),
-            listOf(2, 4, 11, 13, 47, 49, 33, 27),
-            listOf(3, 12, 48, 34)
+            listOf(2, 4, 33, 27, 47, 49, 11, 13),
+            listOf(3, 34, 48, 12)
         )
 
         if (counterclockwise) cycles = cycles.map { it.reversed() }
@@ -137,7 +167,7 @@ class Cube {
         val builder = StringBuilder()
         for (i in 0 until 9 step 3) {
             builder
-            .append(face[i].toString().first()).append(" ")
+            .append(face[i + 0].toString().first()).append(" ")
             .append(face[i + 1].toString().first()).append(" ")
             .append(face[i + 2].toString().first()).append("\n")
         }
