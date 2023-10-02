@@ -65,6 +65,10 @@ fun bitsToMoves(bits: List<String>): String {
     return moves.toString()
 }
 
+fun String.toBinary(): String {
+    return this.map { it.toInt().toString(2).padStart(8, '0') }.joinToString("")
+}
+
 fun xor(s1: String, s2: String): String {
     if (s1.length != s2.length) {
         throw IllegalArgumentException("Input strings must be of equal length.")

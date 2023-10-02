@@ -15,36 +15,65 @@ interface Encryptor {
 
 class Generator {
     public val orderedFace = arrayOf(6, 7, 8, 5, 4, 3, 0, 1, 2)
+    public val orderedCorners = arrayOf(0, 2, 8, 6)
+    public val _moves: MutableList<String> = mutableListOf()
 
     fun generateKey(cubes: List<Cube>): String {
-        return cubes.map { cube ->
-            serialize(cube).let { serialized ->
-                hash(serialized)
-            }
-        }.reduce { acc, hash -> xor(acc, hash) }
+//    Serialization (2):
+//         Use the return from above and label it as the new "og"
+//         str1 = Concat of serializedOne[j] + serializedTwo[j]
+//         str2 = Concat of serializedThree[j] + serializedFour[j]
+//         str3 = Concat of serializedCornersOne[j] + serializedCornersTwo[j]
+//         str4 = Concat of serializedCornersThree[j] + serializedCornersFour[j]
+//         return str = str3 + str1 + og + str2 + str4
+
+        val faces = cubes.map { cube ->
+            serializeFaces(cube)
+        }
+        val corners = cubes.map { cube ->
+            serializeCorners(cube)
+        }
+        val countU = _moves.map { it.count { it == 'U' } }
+        val countF = _moves.map { it.count { it == 'F' } }
+
+        val serializedPartial = corners[0][countU[0] % 6] + corners[1][countU[0] % 6] + 
+            faces[0][countU[0] % 6] + faces[1][countU[1] % 6] + faces[2][countU[2] % 6] + 
+            faces[3][countU[3] % 6] + corners[2][countU[2] % 6] + corners[3][countU[3] % 6]
+
+        val serializedFinal = corners[0][countF[0] % 6] + corners[1][countF[1] % 6] +
+            faces[0][countF[0] % 6] + faces[1][countF[1] % 6] + serializedPartial +
+            faces[2][countF[2] % 6] + faces[3][countF[3] % 6] + corners[2][countF[2] % 6] + corners[3][countF[3] % 6]
+
+
+
+        println(serializedFinal.toLowerCase().toBinary())
+        return ""
     }
 
-    private fun extractLayers(cube: Cube): String {
-        val layers = StringBuilder()
+    private fun extract(cube: Cube, order: Array<Int>): String {
+        val units = StringBuilder()
         for (i in 0 until 6) {
-            for (index in orderedFace) {
-                layers.append(cube.getCube()[i * 9 + index])
+            for (index in order) {
+                units.append(cube.getCube()[i * 9 + index])
             }
         }
-        return layers.toString()
+        return units.toString()
     }
 
     private fun cycle(str: String, positions: Int): String {
         return str.substring(9 - positions) + str.substring(0, 9 - positions)
     }
 
-    private fun serialize(cube: Cube): List<String> {
-        val layers = extractLayers(cube).chunked(9)
+    private fun serializeFaces(cube: Cube): List<String> {
+        val layers = extract(cube, orderedFace).chunked(9)
         val rotatedLayers = layers.mapIndexed { index, segment -> 
             cycle(segment, index)
         }
-        println(rotatedLayers)
         return rotatedLayers
+    }
+
+    private fun serializeCorners(cube: Cube): List<String> {
+        return extract(cube, orderedCorners).chunked(4)
     }
 
 
@@ -69,21 +98,22 @@ abstract class AbstractCubeEncryptor: Encryptor {
     init {
         initializeCubes()
         key = gen.generateKey(listOf(cube1, cube2, cube3, cube4))
+        println(gen._moves)
     }
 
     private fun initializeCubes() {
         val secureRandom = SecureRandom()
-        val count = 1
+        val count = 5
 
         for (cube in listOf(cube1, cube2, cube3, cube4)) {
             val moves_ = StringBuilder()
-
             for (i in 1..count) {
                 val move = moves[secureRandom.nextInt(moves.size)]
                 moves_.append(move).append(" ")
             }
-
-            cube.algorithm(moves_.toString().trim())
+            val conv = moves_.toString().trim()
+            gen._moves.add(conv)
+            cube.algorithm(conv)
         }
     }
 }

@@ -33,14 +33,34 @@ fun main() = runBlocking {
     /*
     PSEUDOCODE ALGORITHM:
 
-    1. Initialize Cube1, Cube2, Cube3, Cube4 with random CSPRNG scrambles (store)
+    1. Initialize Cube1, Cube2, Cube3, Cube4 with random CSPRNG scrambles (store all)
     2. Serialize each cube into a string by extracting each face (described 
     down-to-up S shape U F R B L D) and cycling them based on the index of the face. 
     Concatenate the strings into a master string for each individual cube.
+    3. Additionally serialize the corners of each cube into a string by extracting them
+    in standard spiral order and not applying any cycles. 
     
-    Serialization: 
-        str1 = Concat of serializedOne[1] + serializedTwo[2] + serializedThree[3] + serializedFour[4]
-        str2 = 
+    i = unique index determined by the amount of "U" moves in the cube's unique key (modded by size)
+    
+    Serialization (1): 
+        str1 = Concat of serializedOne[i] + serializedTwo[i] + serializedThree[i] + serializedFour[i]
+        str2 = Concat of serializedCornersOne[i] + serializedCornersTwo[i]
+        str3 = Concat of serializedCornersThree[i] + serializedCornersFour[i]
+        return str = str2 + str1 + str3
+
+    j = unique index determined by the amount of "F" moves in the cube's unique key (modded by size)
+
+    Serialization (2):
+        Use the return from above and label it as the new "og"
+        str1 = Concat of serializedOne[j] + serializedTwo[j]
+        str2 = Concat of serializedThree[j] + serializedFour[j]
+        str3 = Concat of serializedCornersOne[j] + serializedCornersTwo[j]
+        str4 = Concat of serializedCornersThree[j] + serializedCornersFour[j]
+        return str = str3 + str1 + og + str2 + str4
+
+    4. Transform the master key to binary and split into two halves. Pad if needed.
+    5. Xor both halves together and hash the result with SHA-256 for a final serialization.
+
 
     1. Initialize Cube1, Cube2, Cube3, Cube4, S-box, Time-Lock
     2. Generate keys for each cube and a master key
