@@ -33,6 +33,15 @@ fun main() = runBlocking {
     /*
     PSEUDOCODE ALGORITHM:
 
+    1. Initialize Cube1, Cube2, Cube3, Cube4 with random CSPRNG scrambles (store)
+    2. Serialize each cube into a string by extracting each face (described 
+    down-to-up S shape U F R B L D) and cycling them based on the index of the face. 
+    Concatenate the strings into a master string for each individual cube.
+    
+    Serialization: 
+        str1 = Concat of serializedOne[1] + serializedTwo[2] + serializedThree[3] + serializedFour[4]
+        str2 = 
+
     1. Initialize Cube1, Cube2, Cube3, Cube4, S-box, Time-Lock
     2. Generate keys for each cube and a master key
     3. Convert plaintext to binary

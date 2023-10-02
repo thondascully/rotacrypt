@@ -24,22 +24,31 @@ class Generator {
         }.reduce { acc, hash -> xor(acc, hash) }
     }
 
-    private fun extractLayer(cube: Cube): String {
-        val layer = StringBuilder()
+    private fun extractLayers(cube: Cube): String {
+        val layers = StringBuilder()
         for (i in 0 until 6) {
             for (index in orderedFace) {
-                layer.append(cube.getCube()[i * 9 + index])
+                layers.append(cube.getCube()[i * 9 + index])
             }
         }
-        return layer.toString()
+        return layers.toString()
     }
 
-    private fun serialize(cube: Cube): String {
-        println(extractLayer(cube))
-        return cube.toString()
+    private fun cycle(str: String, positions: Int): String {
+        return str.substring(9 - positions) + str.substring(0, 9 - positions)
     }
 
-    private fun hash(data: String): String {
+    private fun serialize(cube: Cube): List<String> {
+        val layers = extractLayers(cube).chunked(9)
+        val rotatedLayers = layers.mapIndexed { index, segment -> 
+            cycle(segment, index)
+        }
+        println(rotatedLayers)
+        return rotatedLayers
+    }
+
+
+    private fun hash(data: List<String>): String {
         return ""
     }
 
