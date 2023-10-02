@@ -71,13 +71,9 @@ fun main() = runBlocking {
     binary form.
     */
 
-    //val rubiksEncryptor = RubiksEncryptor()
+    val rubiksEncryptor = CubeEncryptor()
     
-    //val plaintext = "Hello".toByteArray()
-    //val ciphertext = rubiksEncryptor.encrypt(plaintext)
-    //println(ciphertext)
-    
-    val cube = Cube()
-    cube.algorithm("F L' D B")
-    println(cube.toString())
+    val plaintext = "Hello".toByteArray()
+    val ciphertext = rubiksEncryptor.encrypt(plaintext)
+    println(ciphertext)
 }
