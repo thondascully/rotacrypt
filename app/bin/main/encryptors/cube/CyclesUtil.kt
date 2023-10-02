@@ -26,21 +26,52 @@ public val orderedColors = arrayOf(
     Identifier.WHITE
 )
 
-fun movesToBits(moves: List<String>): String {
-    val moveToBit = mapOf(
-        "U" to "0000", "U'" to "0001",
-        "D" to "0010", "D'" to "0011",
-        "F" to "0100", "F'" to "0101",
-        "B" to "0110", "B'" to "0111",
-        "L" to "1000", "L'" to "1001",
-        "R" to "1010", "R'" to "1011"
-    )
+val moveToBit = mapOf(
+    "U" to "0000", "U'" to "0001",
+    "D" to "0010", "D'" to "0011",
+    "F" to "0100", "F'" to "0101",
+    "B" to "0110", "B'" to "0111",
+    "L" to "1000", "L'" to "1001",
+    "R" to "1010", "R'" to "1011",
+    "R U" to "1100", "R U'" to "1101",
+    "R D" to "1110", "R D'" to "1111"
+)
 
+val bitToMove = mapOf(
+    "0000" to "U ", "0001" to "U' ",
+    "0010" to "D ", "0011" to "D' ",
+    "0100" to "F ", "0101" to "F' ",
+    "0110" to "B ", "0111" to "B' ",
+    "1000" to "L ", "1001" to "L' ",
+    "1010" to "R ", "1011" to "R' ",
+    "1100" to "R U ", "1101" to "R U' ",
+    "1110" to "R D ", "1111" to "R D' "
+)
+
+fun movesToBits(moves: String): String {
     val bits = StringBuilder()
     for (move in moves.split(" ")) {
         bits.append(moveToBit[move])
     }
     return bits.toString()
+}
+
+fun bitsToMoves(bits: List<String>): String {
+    val moves = StringBuilder()
+    for (bit in bits) {
+        moves.append(bitToMove[bit])
+    }
+    return moves.toString()
+}
+
+fun xor(s1: String, s2: String): String {
+    if (s1.length != s2.length) {
+        throw IllegalArgumentException("Input strings must be of equal length.")
+    }
+
+    return s1.zip(s2) { a, b ->
+        if (a == b) '0' else '1'
+    }.joinToString("")
 }
 
 fun stringToMoveCompatibleChunks(text: String): List<String> {
@@ -50,7 +81,12 @@ fun stringToMoveCompatibleChunks(text: String): List<String> {
         fours.add(binary.substring(0, 4))
         fours.add(binary.substring(4, 8))
     }
-    return fourBitChunks
+    return fours
+}
+
+fun testDecrypt(moves: String): String {
+    val bin = moves.split(" ").map { bitToMove[it] ?: "" }.joinToString("")
+    return bin.chunked(8).map { it.toInt(2).toChar() }.joinToString("")
 }
 
 
