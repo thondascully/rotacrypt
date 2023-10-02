@@ -16,6 +16,7 @@ enum class Face {
     UP, FRONT, RIGHT, BACK, LEFT, DOWN
 }
 
+public val moves = listOf("U", "U'", "D", "D'", "F", "F'", "B", "B'", "L", "L'", "R", "R'")
 public val orderedFace = arrayOf(0, 1, 2, 5, 8, 7, 6, 3, 4)
 public val orderedColors = arrayOf(
     Identifier.YELLOW,
@@ -89,7 +90,6 @@ fun testDecrypt(moves: String): String {
     return bin.chunked(8).map { it.toInt(2).toChar() }.joinToString("")
 }
 
-
 val faceToCyclesMap: Map<Face, List<List<Int>>> = mapOf(
     Face.BACK to listOf(
         listOf(27, 29, 31, 33),
@@ -107,7 +107,7 @@ val faceToCyclesMap: Map<Face, List<List<Int>>> = mapOf(
         listOf(45, 47, 49, 51),
         listOf(46, 48, 50, 52),
         listOf(15, 13, 24, 22, 33, 31, 42, 40),
-        listOf(14, 21, 32, 41)
+        listOf(14, 23, 32, 41)
     ),
     Face.UP to listOf(
         listOf(0, 2, 4, 6),
