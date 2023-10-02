@@ -69,14 +69,18 @@ fun String.toBinary(): String {
     return this.map { it.toInt().toString(2).padStart(8, '0') }.joinToString("")
 }
 
-fun xor(s1: String, s2: String): String {
-    if (s1.length != s2.length) {
-        throw IllegalArgumentException("Input strings must be of equal length.")
+fun xor(s1: String, s2: String? = null): String {
+    val halfLength = s1.length / 2
+    val (firstHalf, secondHalf) = if (s2 == null) {
+        val paddedS1 = s1.padEnd(2 * halfLength, '0')
+        paddedS1.take(halfLength) to paddedS1.takeLast(halfLength)
+    } else {
+        if (s1.length != s2.length) {
+            throw IllegalArgumentException("Input strings must be of equal length.")
+        }
+        s1 to s2
     }
-
-    return s1.zip(s2) { a, b ->
-        if (a == b) '0' else '1'
-    }.joinToString("")
+    return firstHalf.zip(secondHalf) { a, b -> if (a == b) '0' else '1' }.joinToString("")
 }
 
 fun stringToMoveCompatibleChunks(text: String): List<String> {

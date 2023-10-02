@@ -19,14 +19,6 @@ class Generator {
     public val _moves: MutableList<String> = mutableListOf()
 
     fun generateKey(cubes: List<Cube>): String {
-//    Serialization (2):
-//         Use the return from above and label it as the new "og"
-//         str1 = Concat of serializedOne[j] + serializedTwo[j]
-//         str2 = Concat of serializedThree[j] + serializedFour[j]
-//         str3 = Concat of serializedCornersOne[j] + serializedCornersTwo[j]
-//         str4 = Concat of serializedCornersThree[j] + serializedCornersFour[j]
-//         return str = str3 + str1 + og + str2 + str4
-
         val faces = cubes.map { cube ->
             serializeFaces(cube)
         }
@@ -44,7 +36,7 @@ class Generator {
             faces[0][countF[0] % 6] + faces[1][countF[1] % 6] + serializedPartial +
             faces[2][countF[2] % 6] + faces[3][countF[3] % 6] + corners[2][countF[2] % 6] + corners[3][countF[3] % 6]
 
-        println(serializedFinal.toLowerCase().toBinary())
+        println(hash(serializedFinal.toLowerCase().toBinary()))
         return ""
     }
 
@@ -74,13 +66,9 @@ class Generator {
         return extract(cube, orderedCorners).chunked(4)
     }
 
-
-    private fun hash(data: List<String>): String {
-        return ""
-    }
-
-    private fun xor(hash1: String, hash2: String): String {
-        return "" 
+    fun hash(raw: String): String {
+        val digest = MessageDigest.getInstance("SHA-256").digest(raw.toByteArray())
+        return digest.joinToString("") { "%02x".format(it) }
     }
 }
 
