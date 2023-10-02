@@ -94,7 +94,7 @@ val faceToCyclesMap: Map<Face, List<List<Int>>> = mapOf(
     Face.BACK to listOf(
         listOf(27, 29, 31, 33),
         listOf(28, 30, 32, 34),
-        listOf(2, 0, 42, 36, 49, 51, 20, 22),
+        listOf(2, 0, 36, 42, 51, 49, 22, 20),
         listOf(1, 43, 50, 21)
     ),
     Face.FRONT to listOf(
