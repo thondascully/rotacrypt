@@ -32,11 +32,13 @@ class Generator {
             faces[0][countU[0] % 6] + faces[1][countU[1] % 6] + faces[2][countU[2] % 6] + 
             faces[3][countU[3] % 6] + corners[2][countU[2] % 6] + corners[3][countU[3] % 6]
 
-        val serializedFinal = corners[0][countF[0] % 6] + corners[1][countF[1] % 6] +
-            faces[0][countF[0] % 6] + faces[1][countF[1] % 6] + serializedPartial +
-            faces[2][countF[2] % 6] + faces[3][countF[3] % 6] + corners[2][countF[2] % 6] + corners[3][countF[3] % 6]
+        val serializedFinal = corners[0][(countU[0] + 1) % 6] + corners[1][(countU[1] + 1) % 6] + 
+            faces[0][(countU[0] + 1) % 6] + faces[1][(countU[1] + 1) % 6] + serializedPartial +
+            faces[2][(countU[2] + 1) % 6] + faces[3][(countU[3] + 1) % 6] + 
+            corners[2][(countU[2] + 1) % 6] + corners[3][(countU[3] + 1) % 6]
 
-        println(hash(serializedFinal.toLowerCase().toBinary()))
+        val conv = serializedFinal.map { colorToFace[it] ?: it }.joinToString("")
+        println(conv)
         return ""
     }
 
@@ -84,12 +86,11 @@ abstract class AbstractCubeEncryptor: Encryptor {
     init {
         initializeCubes()
         key = gen.generateKey(listOf(cube1, cube2, cube3, cube4))
-        println(gen._moves)
     }
 
     private fun initializeCubes() {
         val secureRandom = SecureRandom()
-        val count = 5
+        val count = 420
 
         for (cube in listOf(cube1, cube2, cube3, cube4)) {
             val moves_ = StringBuilder()

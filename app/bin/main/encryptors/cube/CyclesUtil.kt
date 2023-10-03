@@ -49,6 +49,15 @@ val bitToMove = mapOf(
     "1110" to "R D ", "1111" to "R D' "
 )
 
+val colorToFace = mapOf(
+    'Y' to 'U',
+    'B' to 'F',
+    'R' to 'R',
+    'G' to 'B',
+    'O' to 'L',
+    'W' to 'D'
+)
+
 fun movesToBits(moves: String): String {
     val bits = StringBuilder()
     for (move in moves.split(" ")) {

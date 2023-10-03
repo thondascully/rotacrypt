@@ -58,10 +58,13 @@ fun main() = runBlocking {
         str4 = Concat of serializedCornersThree[j] + serializedCornersFour[j]
         return str = str3 + str1 + og + str2 + str4
 
-    4. Transform the master key to binary and split into two halves. Pad if needed.
-    5. Xor both halves together and hash the result with SHA-256 for a final serialization.
+    4. Convert plaintext to binary. Pass through S-box and XOR with binary master key.
+    5. Chunk plaintext into groups of 48 bits and create a respective amount of cubes.
+    6. Apply the plaintexts to the cubes in the order of the chunks.
+    7. Map the serialized master key string of unit colors to their corresponding layer 
+    operation (center pieces) and apply the layer operations to the cube(s). Repeat for each cube.
 
-
+ 
     1. Initialize Cube1, Cube2, Cube3, Cube4, S-box, Time-Lock
     2. Generate keys for each cube and a master key
     3. Convert plaintext to binary
