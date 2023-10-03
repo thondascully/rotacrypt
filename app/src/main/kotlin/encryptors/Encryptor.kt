@@ -38,9 +38,24 @@ class Generator {
             corners[2][(countU[2] + 1) % 6] + corners[3][(countU[3] + 1) % 6]
 
         val conv = serializedFinal.map { colorToFace[it] ?: it }.joinToString("")
-        println(conv)
+        //println(deterministicKeyExpand(conv))
         return ""
     }
+
+    // fun deterministicKeyExpand(inputString: String, targetLength: Int = 20): String {
+    //     val inputLength = inputString.length
+    //     val stepSize = inputLength.toDouble() / targetLength.toDouble()
+    //     val result = StringBuilder()
+
+    //     for (i in 0 until targetLength) {
+    //         val index = (i * stepSize).toInt()
+    //         result.append(inputString[index])
+    //     }
+    //     val ret = result.toString().toCharArray()
+    //     val cube = Cube()
+    //     cube.algorithm(ret.joinToString(" "))
+    //     return serializeFaces(cube.getCube()[0])
+    // }
 
     private fun extract(cube: Cube, order: Array<Int>): String {
         val units = StringBuilder()
@@ -89,8 +104,9 @@ abstract class AbstractCubeEncryptor: Encryptor {
     }
 
     private fun initializeCubes() {
-        val secureRandom = SecureRandom()
-        val count = 420
+        val secureRandom = SecureRandom.getInstance("SHA1PRNG")
+        secureRandom.setSeed(byteArrayOf(1, 2, 3, 4, 5, 6, 7, 8))
+        val count = 4
 
         for (cube in listOf(cube1, cube2, cube3, cube4)) {
             val moves_ = StringBuilder()
