@@ -8,8 +8,8 @@
 \contentsline {subsection}{\numberline {2.3}Cyclic Transformations}{2}{subsection.2.3}%
 \contentsline {section}{\numberline {3}Key Generation}{2}{section.3}%
 \contentsline {subsection}{\numberline {3.1}4-Cube Initialization}{2}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Master-Key Serialization}{2}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Sub-Key Generation}{2}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.2}Master-Key Serialization}{3}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Sub-Key Generation}{3}{subsection.3.3}%
 \contentsline {section}{\numberline {4}Encryption}{3}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Plaintext Setup With S-Box Transformations On Chunks}{3}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Cube Mapping Procedure}{3}{subsection.4.2}%

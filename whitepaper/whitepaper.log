@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/MacPorts 2022.62882_2) (preloaded format=pdflatex 2023.3.15)  3 OCT 2023 19:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/MacPorts 2022.62882_2) (preloaded format=pdflatex 2023.3.15)  4 OCT 2023 09:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -262,24 +262,24 @@ File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
 ) (./whitepaper.aux)
 \openout1 = `whitepaper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
  (/opt/local/share/texmf-texlive/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count293
@@ -299,7 +299,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/opt/local/share/texmf-texlive/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 16.
+Package hyperref Info: Link coloring OFF on input line 17.
  (/opt/local/share/texmf-texlive/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/opt/local/share/texmf-texlive/tex/latex/refcount/refcount.sty
@@ -309,9 +309,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count299
 )
-LaTeX Info: Redefining \ref on input line 16.
-LaTeX Info: Redefining \pageref on input line 16.
-LaTeX Info: Redefining \nameref on input line 16.
+LaTeX Info: Redefining \ref on input line 17.
+LaTeX Info: Redefining \pageref on input line 17.
+LaTeX Info: Redefining \nameref on input line 17.
  (./whitepaper.out) (./whitepaper.out)
 \@outlinefile=\write3
 \openout3 = `whitepaper.out'.
@@ -352,11 +352,11 @@ LaTeX Info: Redefining \nameref on input line 16.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 19.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 20.
 (/opt/local/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 19.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 20.
  (/opt/local/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (./whitepaper.toc)
@@ -365,23 +365,34 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
  [1
 
-{/opt/local/var/db/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] (./whitepaper.aux)
+{/opt/local/var/db/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+<cube.png, id=100, 809.0225pt x 806.01125pt>
+File: cube.png Graphic file (type png)
+<use cube.png>
+Package pdftex.def Info: cube.png  used on input line 33.
+(pdftex.def)             Requested size: 80.90698pt x 80.60583pt.
+<core.png, id=102, 808.01875pt x 806.01125pt>
+File: core.png Graphic file (type png)
+<use core.png>
+Package pdftex.def Info: core.png  used on input line 34.
+(pdftex.def)             Requested size: 80.80661pt x 80.60583pt.
+ [2 <./cube.png> <./core.png>] [3] (./whitepaper.aux)
 Package rerunfilecheck Info: File `whitepaper.out' has not changed.
 (rerunfilecheck)             Checksum: 5B9602B6D11430E3D9DA5F303D88D46D;2704.
  ) 
 Here is how much of TeX's memory you used:
- 11270 strings out of 479382
- 173019 string characters out of 5869398
+ 11285 strings out of 479382
+ 173197 string characters out of 5869398
  469058 words of memory out of 5000000
- 29151 multiletter control sequences out of 15000+600000
+ 29163 multiletter control sequences out of 15000+600000
  478630 words of font info for 64 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
  60i,6n,63p,436b,327s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on whitepaper.pdf (3 pages, 73653 bytes).
+Output written on whitepaper.pdf (3 pages, 116105 bytes).
 PDF statistics:
- 138 PDF objects out of 1000 (max. 8388607)
- 121 compressed objects within 2 object streams
+ 143 PDF objects out of 1000 (max. 8388607)
+ 122 compressed objects within 2 object streams
  22 named destinations out of 1000 (max. 500000)
- 137 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 147 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1696387631 "/Users/thondascully/Projects/rotacrypt/whitepaper/whitepaper.tex" "whitepaper.pdf" "whitepaper" 1696387632 0
-  "/Users/thondascully/Projects/rotacrypt/whitepaper/whitepaper.tex" 1696387631 1170 5f26b47d0c1b559deed869a06dd7ff09 ""
+["pdflatex"] 1696436414 "/Users/thondascully/Projects/rotacrypt/whitepaper/whitepaper.tex" "whitepaper.pdf" "whitepaper" 1696436415 0
+  "/Users/thondascully/Projects/rotacrypt/whitepaper/whitepaper.tex" 1696436414 1262 66af4090f2fd8205d12000e1daba939c ""
   "/opt/local/etc/texmf/texmf.cnf" 1678889952 38222 86600ffd55a0fce672e31a15d690ee55 ""
   "/opt/local/share/texmf-texlive/fonts/map/fontname/texfonts.map" 1583632499 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/opt/local/share/texmf-texlive/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1556757451 1004 54797486969f23fa377b128694d548df ""
@@ -88,10 +88,12 @@
   "/opt/local/share/texmf-texlive/tex/latex/url/url.sty" 1556757999 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "/opt/local/var/db/texmf/fonts/map/pdftex/updmap/pdftex.map" 1678892756 4275926 4476c38317df35dc39093039dcdf07ce ""
   "/opt/local/var/db/texmf/web2c/pdftex/pdflatex.fmt" 1678892821 2617889 79a8b731dafa714710efb4551c195955 ""
-  "whitepaper.aux" 1696387632 2800 d9f722e8f7956d615ff51bd2bddebe59 "pdflatex"
-  "whitepaper.out" 1696387632 2704 5b9602b6d11430e3d9da5f303d88d46d "pdflatex"
-  "whitepaper.tex" 1696387631 1170 5f26b47d0c1b559deed869a06dd7ff09 ""
-  "whitepaper.toc" 1696387632 1417 c691f11475fc03064c4368f79cbb8b28 "pdflatex"
+  "core.png" 1696436319 23424 1aeb9e0737622d547f949d14f86250dd ""
+  "cube.png" 1696436380 7873 568f45853c629c1a088be32fd6392674 ""
+  "whitepaper.aux" 1696436415 2800 7e388d225013af7d39811e284fb30b33 "pdflatex"
+  "whitepaper.out" 1696436415 2704 5b9602b6d11430e3d9da5f303d88d46d "pdflatex"
+  "whitepaper.tex" 1696436414 1262 66af4090f2fd8205d12000e1daba939c ""
+  "whitepaper.toc" 1696436415 1417 534a4b9efa8acbdc0e814b6885d87507 "pdflatex"
   (generated)
   "whitepaper.aux"
   "whitepaper.log"
