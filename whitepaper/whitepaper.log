@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/MacPorts 2022.62882_2) (preloaded format=pdflatex 2023.3.15)  5 OCT 2023 08:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/MacPorts 2022.62882_2) (preloaded format=pdflatex 2023.3.15)  5 OCT 2023 10:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -665,23 +665,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 147--148
 
  []
 
-[3 <./cubeLp.png> <./cubeLpUp.png> <./cubeLpUpRp.png>] [4] [5] (./whitepaper.aux)
+[3 <./cubeLp.png> <./cubeLpUp.png> <./cubeLpUpRp.png>]
+<keygen.jpg, id=164, 1999.47pt x 1018.80624pt>
+File: keygen.jpg Graphic file (type jpg)
+<use keygen.jpg>
+Package pdftex.def Info: keygen.jpg  used on input line 162.
+(pdftex.def)             Requested size: 469.75502pt x 239.35732pt.
+ [4 <./keygen.jpg>] [5] [6] (./whitepaper.aux)
 Package rerunfilecheck Info: File `whitepaper.out' has not changed.
 (rerunfilecheck)             Checksum: BD694C52017009D8AC1738F724FB1FBD;3494.
  ) 
 Here is how much of TeX's memory you used:
- 23561 strings out of 479382
- 432351 string characters out of 5869398
- 699225 words of memory out of 5000000
- 41188 multiletter control sequences out of 15000+600000
+ 23571 strings out of 479382
+ 432478 string characters out of 5869398
+ 699226 words of memory out of 5000000
+ 41194 multiletter control sequences out of 15000+600000
  479959 words of font info for 69 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
  84i,9n,89p,782b,749s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/opt/local/share/texmf-texlive/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi12.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi8.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr17.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr7.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti12.pfb></opt/local/share/texmf-texlive/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on whitepaper.pdf (5 pages, 307059 bytes).
+Output written on whitepaper.pdf (6 pages, 611021 bytes).
 PDF statistics:
- 236 PDF objects out of 1000 (max. 8388607)
- 187 compressed objects within 2 object streams
- 34 named destinations out of 1000 (max. 500000)
- 229 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 242 PDF objects out of 1000 (max. 8388607)
+ 191 compressed objects within 2 object streams
+ 36 named destinations out of 1000 (max. 500000)
+ 234 words of extra memory for PDF output out of 10000 (max. 10000000)
 
