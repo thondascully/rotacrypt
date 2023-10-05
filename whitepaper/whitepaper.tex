@@ -70,7 +70,7 @@ Max Park, the current world record holder (11 June 2023) for the 2-handed solve,
     \caption{A visualization of the \textit{R} operation (rotating the right layer clockwise).}
 \end{figure}
 
-Let's dive into the details of the mechanics of the 3x3x3 puzzle. The cube boasts centers, edges, and corners. These center pieces serve as the invariant axis around which the peripheral cubies rotate. The six unit colors are yellow, blue, red, green, orange, and white.
+Let's dive into the mechanics of the 3x3x3 puzzle. The cube boasts centers, edges, and corners. These single-colored center pieces serve as the invariant axis around which the peripheral cubies rotate. The six unit colors are yellow, blue, red, green, orange, and white.
 
 \begin{figure}[h]
     \hfill 
@@ -90,34 +90,76 @@ Let's dive into the details of the mechanics of the 3x3x3 puzzle. The cube boast
 
 For instance, if the cube is held with a yellow top and blue front, the red and orange faces will invariably be to the right and left, respectively. In fact, the red and orange center pieces will \textit{always} be opposites, as will the blue-green and white-yellow pairs of center pieces.\\
 
-With fixed center pieces, this means that a static orientation, such as holding the cube with the yellow face on the top layer and the blue face on the front layer (as pictured above) yields an orientation in which the red face will always be to the right, the green face always to the left,
-
-\begin{figure}[H]
-    \hspace{20pt}
-    \begin{minipage}{.3\textwidth}
-        \includegraphics[scale=0.1]{cube.png}
-    \end{minipage}%
-    \begin{minipage}{.6\textwidth}
-        A visualization of a 3x3x3 cube. The cube has 6 faces, each with 9 stickers. Notably, this means that there exists 54 different unit tiles on the cube. The cube has 43,252,003,274,489,856,000 possible states.
+\begin{figure}[h]
+    \centering
+    \begin{minipage}[c]{0.2\textwidth}
+        \includegraphics[scale=0.1]{cubeLp.png}
     \end{minipage}
-    
-    \vspace{20pt}
-    
-    \hspace{20pt}
-    \begin{minipage}{.3\textwidth}
-        \includegraphics[scale=0.1]{core.png}
-    \end{minipage}%
-    \begin{minipage}{.6\textwidth}
-        The six colors of the cube are Yellow, Blue, Red, Green, Orange, and White. The cube has 6 center pieces, and they are permanently fixed in place. The center pieces are the only pieces that have a single color, and they do not move when the cube is being solved.\\
+    \begin{minipage}[c]{0.05\textwidth}
+        \centering
+        \begin{tikzpicture}
+            \draw [->, ultra thick] (0,0.5)--(1,0.5);
+        \end{tikzpicture}
     \end{minipage}
+    \hspace{0.5cm}
+    \begin{minipage}[c]{0.2\textwidth}
+        \includegraphics[scale=0.1]{cubeLpUp.png}
+    \end{minipage}
+    \begin{minipage}[c]{0.05\textwidth}
+        \centering
+        \begin{tikzpicture}
+            \draw [->, ultra thick] (0,0.5)--(1,0.5);
+        \end{tikzpicture}
+    \end{minipage}
+    \hspace{0.5cm}
+    \begin{minipage}[c]{0.2\textwidth}
+        \includegraphics[scale=0.1]{cubeLpUpRp.png}
+    \end{minipage}
+    \caption{A visualization of the \textit{L' U' R'} operation(s).}
 \end{figure}
 
-The center pieces are permanently affixed to the core. These center pieces serve as the invariant axis around which the peripheral cubies rotate. 
+\subsection{Notation for Cube Operations}
 
+The notation used to describe the movements and algorithms for solving the Rubik's Cube is standardized to facilitate easy understanding and sharing of solutions. Each face of the cube is designated by an uppercase letter:
 
+\begin{itemize}
+    \item \textbf{U} - Up (Top Layer)
+    \item \textbf{D} - Down (Bottom Layer)
+    \item \textbf{L} - Left (Left Layer)
+    \item \textbf{R} - Right (Right Layer)
+    \item \textbf{F} - Front (Front Layer)
+    \item \textbf{B} - Back (Back Layer)
+\end{itemize}
+
+The following symbols are appended to these letters to indicate the direction of rotation:
+
+\begin{itemize}
+    \item No symbol - 90-degree clockwise rotation
+    \item \textbf{'} (apostrophe) - 90-degree counterclockwise rotation
+    \item \textbf{2} - 180-degree rotation (either direction)
+\end{itemize}
+
+For example, the sequence \textit{L' U' R'} would indicate a counterclockwise rotation of the left layer, followed by a counterclockwise rotation of the top layer, and finally, a counterclockwise rotation of the right layer.
+
+\subsection{God's Number}
+In the realm of 3x3x3 Rubik's Cubes, \textit{God's Number} is a term used to denote the maximum number of moves required to solve any scrambled cube. It has been proven that any cube can be solved in 20 moves or fewer (the citation can be found in the \textit{References} section). This concept is an intriguing insight into the mathematical efficiency of the cube's design.
+
+Furthermore, this means that any scramble can be reached with 20 moves or fewer. This is a key point to keep in mind when considering the security of the cube as a cryptographic primitive as well as for key size considerations.\\
+
+\subsection{Combinatorial Explosion with Multiple Cubes}
+Let us consider the number of possible states for a single 3x3x3 Rubik's Cube, which is \(43,252,003,274,489,856,000\). When chaining together the combinations of two different cubes, the number of combined states is \((43,252,003,274,489,856,000)^2\).
+
+This squaring occurs because each state of the first cube can pair with every state of the second cube, yielding \(43,252,003,274,489,856,000 \times 43,252,003,274,489,856,000\). Mathematically, the set of possible states becomes the Cartesian product of the two sets of states, leading to an exponential increase in complexity.
+
+One intriguing aspect of chaining multiple Rubik's Cubes is the exponential growth in the state space. Let \( N \) represent the number of unique states for a single Rubik's Cube. For \( k \) chained Rubik's Cubes, the total number of unique states becomes \( N^k \). This exponential increase serves a critical function: it substantially minimizes the likelihood of collisions whilst simultaneously increasing the difficulty of brute-force attacks.
+
+\section{Overview}
 
 \subsection{Scheme Overview}
 <...>
+
+\subsection{Purpose}
+There is no purpose. I was told to not make a cryptosystem, so I did the opposite.
 
 \subsection{Intended Usage}
 <...>

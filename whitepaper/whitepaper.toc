@@ -1,17 +1,22 @@
 \contentsline {section}{\numberline {1}Introduction}{2}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Review of Rubik's Cubes}{2}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}Scheme Overview}{3}{subsection.1.2}%
-\contentsline {subsection}{\numberline {1.3}Intended Usage}{3}{subsection.1.3}%
-\contentsline {section}{\numberline {2}3x3x3 Implementation}{3}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Data Structure Breakdown}{3}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Augmented SPEFFZ Mapping}{3}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Cyclic Transformations}{4}{subsection.2.3}%
-\contentsline {section}{\numberline {3}Key Generation}{4}{section.3}%
-\contentsline {subsection}{\numberline {3.1}4-Cube Initialization}{4}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Master-Key Serialization}{4}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Sub-Key Generation}{4}{subsection.3.3}%
-\contentsline {section}{\numberline {4}Encryption}{4}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Plaintext Setup With S-Box Transformations On Chunks}{4}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Cube Mapping Procedure}{4}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Encryption Algorithm}{4}{subsection.4.3}%
-\contentsline {section}{\numberline {5}Decryption}{4}{section.5}%
+\contentsline {subsection}{\numberline {1.2}Notation for Cube Operations}{3}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}God's Number}{3}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Combinatorial Explosion with Multiple Cubes}{4}{subsection.1.4}%
+\contentsline {section}{\numberline {2}Overview}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Scheme Overview}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Purpose}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Intended Usage}{4}{subsection.2.3}%
+\contentsline {section}{\numberline {3}3x3x3 Implementation}{4}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Data Structure Breakdown}{4}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Augmented SPEFFZ Mapping}{4}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Cyclic Transformations}{5}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Key Generation}{5}{section.4}%
+\contentsline {subsection}{\numberline {4.1}4-Cube Initialization}{5}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Master-Key Serialization}{5}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Sub-Key Generation}{5}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Encryption}{5}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Plaintext Setup With S-Box Transformations On Chunks}{5}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Cube Mapping Procedure}{5}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Encryption Algorithm}{5}{subsection.5.3}%
+\contentsline {section}{\numberline {6}Decryption}{5}{section.6}%
