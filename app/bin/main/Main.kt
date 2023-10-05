@@ -110,6 +110,6 @@ fun main() = runBlocking {
     //println(ciphertext)
 
     val cube = Cube()
-    cube.algorithm("R U")
+    cube.algorithm("R U R' U'")
     println(cube)
 }

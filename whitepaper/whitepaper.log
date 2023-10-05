@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/MacPorts 2022.62882_2) (preloaded format=pdflatex 2023.3.15)  4 OCT 2023 09:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/MacPorts 2022.62882_2) (preloaded format=pdflatex 2023.3.15)  4 OCT 2023 18:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -210,24 +210,53 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ) (/opt/local/share/texmf-texlive/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
+) (/opt/local/share/texmf-texlive/tex/latex/caption/subcaption.sty
+Package: subcaption 2022/01/07 v1.5 Sub-captions (AR)
+ (/opt/local/share/texmf-texlive/tex/latex/caption/caption.sty
+Package: caption 2022/03/01 v3.6b Customizing captions (AR)
+ (/opt/local/share/texmf-texlive/tex/latex/caption/caption3.sty
+Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
+\caption@tempdima=\dimen154
+\captionmargin=\dimen155
+\caption@leftmargin=\dimen156
+\caption@rightmargin=\dimen157
+\caption@width=\dimen158
+\caption@indent=\dimen159
+\caption@parindent=\dimen160
+\caption@hangindent=\dimen161
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count281
+\c@continuedfloat=\count282
+Package caption Info: hyperref package is loaded.
+)
+\c@subfigure=\count283
+\c@subtable=\count284
+) (/opt/local/share/texmf-texlive/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count285
+\float@exts=\toks24
+\float@box=\box52
+\@float@everytoks=\toks25
+\@floatcapt=\box53
 ) (/opt/local/share/texmf-texlive/tex/latex/listings/listings.sty
-\lst@mode=\count281
-\lst@gtempboxa=\box52
-\lst@token=\toks24
-\lst@length=\count282
-\lst@currlwidth=\dimen154
-\lst@column=\count283
-\lst@pos=\count284
-\lst@lostspace=\dimen155
-\lst@width=\dimen156
-\lst@newlines=\count285
-\lst@lineno=\count286
-\lst@maxwidth=\dimen157
+\lst@mode=\count286
+\lst@gtempboxa=\box54
+\lst@token=\toks26
+\lst@length=\count287
+\lst@currlwidth=\dimen162
+\lst@column=\count288
+\lst@pos=\count289
+\lst@lostspace=\dimen163
+\lst@width=\dimen164
+\lst@newlines=\count290
+\lst@lineno=\count291
+\lst@maxwidth=\dimen165
  (/opt/local/share/texmf-texlive/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count287
-\lst@skipnumbers=\count288
-\lst@framebox=\box53
+\c@lstnumber=\count292
+\lst@skipnumbers=\count293
+\lst@framebox=\box55
 ) (/opt/local/share/texmf-texlive/tex/latex/listings/listings.cfg
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
@@ -238,68 +267,73 @@ Package: color 2021/12/07 v1.3c Standard LaTeX Color (DPC)
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 149.
-) (/opt/local/share/texmf-texlive/tex/latex/geometry/geometry.sty
+) (/opt/local/share/texmf-texlive/tex/latex/parskip/parskip.sty
+Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
+ (/opt/local/share/texmf-texlive/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count294
+)) (/opt/local/share/texmf-texlive/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
  (/opt/local/share/texmf-texlive/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count289
-\Gm@cntv=\count290
-\c@Gm@tempcnt=\count291
-\Gm@bindingoffset=\dimen158
-\Gm@wd@mp=\dimen159
-\Gm@odd@mp=\dimen160
-\Gm@even@mp=\dimen161
-\Gm@layoutwidth=\dimen162
-\Gm@layoutheight=\dimen163
-\Gm@layouthoffset=\dimen164
-\Gm@layoutvoffset=\dimen165
-\Gm@dimlist=\toks25
+\Gm@cnth=\count295
+\Gm@cntv=\count296
+\c@Gm@tempcnt=\count297
+\Gm@bindingoffset=\dimen166
+\Gm@wd@mp=\dimen167
+\Gm@odd@mp=\dimen168
+\Gm@even@mp=\dimen169
+\Gm@layoutwidth=\dimen170
+\Gm@layoutheight=\dimen171
+\Gm@layouthoffset=\dimen172
+\Gm@layoutvoffset=\dimen173
+\Gm@dimlist=\toks27
 ) (/opt/local/share/texmf-texlive/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count292
-\l__pdf_internal_box=\box54
+\l__color_backend_stack_int=\count298
+\l__pdf_internal_box=\box56
 ) (./whitepaper.aux)
 \openout1 = `whitepaper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
  (/opt/local/share/texmf-texlive/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count293
-\scratchdimen=\dimen166
-\scratchbox=\box55
-\nofMPsegments=\count294
-\nofMParguments=\count295
-\everyMPshowfont=\toks26
-\MPscratchCnt=\count296
-\MPscratchDim=\dimen167
-\MPnumerator=\count297
-\makeMPintoPDFobject=\count298
-\everyMPtoPDFconversion=\toks27
+\scratchcounter=\count299
+\scratchdimen=\dimen174
+\scratchbox=\box57
+\nofMPsegments=\count300
+\nofMParguments=\count301
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count302
+\MPscratchDim=\dimen175
+\MPnumerator=\count303
+\makeMPintoPDFobject=\count304
+\everyMPtoPDFconversion=\toks29
 ) (/opt/local/share/texmf-texlive/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/opt/local/share/texmf-texlive/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 17.
+Package hyperref Info: Link coloring OFF on input line 20.
  (/opt/local/share/texmf-texlive/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/opt/local/share/texmf-texlive/tex/latex/refcount/refcount.sty
@@ -307,16 +341,20 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/opt/local/share/texmf-texlive/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count299
+\c@section@level=\count305
 )
-LaTeX Info: Redefining \ref on input line 17.
-LaTeX Info: Redefining \pageref on input line 17.
-LaTeX Info: Redefining \nameref on input line 17.
+LaTeX Info: Redefining \ref on input line 20.
+LaTeX Info: Redefining \pageref on input line 20.
+LaTeX Info: Redefining \nameref on input line 20.
  (./whitepaper.out) (./whitepaper.out)
 \@outlinefile=\write3
 \openout3 = `whitepaper.out'.
 
-\c@lstlisting=\count300
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count306
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -352,11 +390,11 @@ LaTeX Info: Redefining \nameref on input line 17.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 20.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 23.
 (/opt/local/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 20.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 23.
  (/opt/local/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (./whitepaper.toc)
@@ -366,33 +404,43 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  [1
 
 {/opt/local/var/db/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<cube.png, id=100, 809.0225pt x 806.01125pt>
+<cube.png, id=101, 809.0225pt x 806.01125pt>
 File: cube.png Graphic file (type png)
 <use cube.png>
-Package pdftex.def Info: cube.png  used on input line 33.
+Package pdftex.def Info: cube.png  used on input line 45.
 (pdftex.def)             Requested size: 80.90698pt x 80.60583pt.
-<core.png, id=102, 808.01875pt x 806.01125pt>
+<core.png, id=103, 808.01875pt x 806.01125pt>
 File: core.png Graphic file (type png)
 <use core.png>
-Package pdftex.def Info: core.png  used on input line 34.
+Package pdftex.def Info: core.png  used on input line 55.
 (pdftex.def)             Requested size: 80.80661pt x 80.60583pt.
- [2 <./cube.png> <./core.png>] [3] (./whitepaper.aux)
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--63
+
+ []
+
+[2 <./cube.png> <./core.png>] [3] [4] (./whitepaper.aux)
 Package rerunfilecheck Info: File `whitepaper.out' has not changed.
 (rerunfilecheck)             Checksum: 5B9602B6D11430E3D9DA5F303D88D46D;2704.
  ) 
 Here is how much of TeX's memory you used:
- 11285 strings out of 479382
- 173197 string characters out of 5869398
- 469058 words of memory out of 5000000
- 29163 multiletter control sequences out of 15000+600000
- 478630 words of font info for 64 fonts, out of 8000000 for 9000
+ 13097 strings out of 479382
+ 206457 string characters out of 5869398
+ 500514 words of memory out of 5000000
+ 30950 multiletter control sequences out of 15000+600000
+ 479275 words of font info for 67 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
- 60i,6n,63p,436b,327s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on whitepaper.pdf (3 pages, 116105 bytes).
+ 67i,9n,77p,780b,325s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr17.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr7.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb>
+Output written on whitepaper.pdf (4 pages, 144784 bytes).
 PDF statistics:
- 143 PDF objects out of 1000 (max. 8388607)
- 122 compressed objects within 2 object streams
- 22 named destinations out of 1000 (max. 500000)
+ 161 PDF objects out of 1000 (max. 8388607)
+ 135 compressed objects within 2 object streams
+ 25 named destinations out of 1000 (max. 500000)
  147 words of extra memory for PDF output out of 10000 (max. 10000000)
 
