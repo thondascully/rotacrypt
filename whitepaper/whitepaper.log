@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/MacPorts 2022.62882_2) (preloaded format=pdflatex 2023.3.15)  5 OCT 2023 10:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/MacPorts 2022.62882_2) (preloaded format=pdflatex 2023.3.15)  9 OCT 2023 06:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -602,92 +602,98 @@ File: cube.png Graphic file (type png)
 <use cube.png>
 Package pdftex.def Info: cube.png  used on input line 52.
 (pdftex.def)             Requested size: 80.90698pt x 80.60583pt.
-<core_r_highlight.png, id=131, 808.01875pt x 806.01125pt>
-File: core_r_highlight.png Graphic file (type png)
-<use core_r_highlight.png>
-Package pdftex.def Info: core_r_highlight.png  used on input line 55.
+<moves/core_r_highlight.png, id=131, 808.01875pt x 806.01125pt>
+File: moves/core_r_highlight.png Graphic file (type png)
+<use moves/core_r_highlight.png>
+Package pdftex.def Info: moves/core_r_highlight.png  used on input line 55.
 (pdftex.def)             Requested size: 80.80661pt x 80.60583pt.
 
 Overfull \hbox (6.56357pt too wide) in paragraph at lines 61--62
  [][] 
  []
 
-<cube_r.png, id=132, 808.01875pt x 806.01125pt>
-File: cube_r.png Graphic file (type png)
-<use cube_r.png>
-Package pdftex.def Info: cube_r.png  used on input line 65.
+<moves/cube_r.png, id=132, 808.01875pt x 806.01125pt>
+File: moves/cube_r.png Graphic file (type png)
+<use moves/cube_r.png>
+Package pdftex.def Info: moves/cube_r.png  used on input line 65.
 (pdftex.def)             Requested size: 80.80661pt x 80.60583pt.
-<core_r_transform.png, id=133, 808.01875pt x 806.01125pt>
-File: core_r_transform.png Graphic file (type png)
-<use core_r_transform.png>
-Package pdftex.def Info: core_r_transform.png  used on input line 68.
+<moves/core_r_transform.png, id=133, 808.01875pt x 806.01125pt>
+File: moves/core_r_transform.png Graphic file (type png)
+<use moves/core_r_transform.png>
+Package pdftex.def Info: moves/core_r_transform.png  used on input line 68.
 (pdftex.def)             Requested size: 80.80661pt x 80.60583pt.
-<core.png, id=134, 808.01875pt x 806.01125pt>
-File: core.png Graphic file (type png)
-<use core.png>
-Package pdftex.def Info: core.png  used on input line 79.
+<moves/core.png, id=134, 808.01875pt x 806.01125pt>
+File: moves/core.png Graphic file (type png)
+<use moves/core.png>
+Package pdftex.def Info: moves/core.png  used on input line 79.
 (pdftex.def)             Requested size: 80.80661pt x 80.60583pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 91--92
 
  []
 
-<cubeLp.png, id=136, 808.01875pt x 806.01125pt>
-File: cubeLp.png Graphic file (type png)
-<use cubeLp.png>
-Package pdftex.def Info: cubeLp.png  used on input line 96.
+<moves/cubeLp.png, id=136, 808.01875pt x 806.01125pt>
+File: moves/cubeLp.png Graphic file (type png)
+<use moves/cubeLp.png>
+Package pdftex.def Info: moves/cubeLp.png  used on input line 96.
 (pdftex.def)             Requested size: 80.80661pt x 80.60583pt.
 
 Overfull \hbox (6.56357pt too wide) in paragraph at lines 102--103
  [][] 
  []
 
-<cubeLpUp.png, id=137, 808.01875pt x 806.01125pt>
-File: cubeLpUp.png Graphic file (type png)
-<use cubeLpUp.png>
-Package pdftex.def Info: cubeLpUp.png  used on input line 106.
+<moves/cubeLpUp.png, id=137, 808.01875pt x 806.01125pt>
+File: moves/cubeLpUp.png Graphic file (type png)
+<use moves/cubeLpUp.png>
+Package pdftex.def Info: moves/cubeLpUp.png  used on input line 106.
 (pdftex.def)             Requested size: 80.80661pt x 80.60583pt.
 
 Overfull \hbox (6.56357pt too wide) in paragraph at lines 112--113
  [][] 
  []
 
-<cubeLpUpRp.png, id=138, 808.01875pt x 806.01125pt>
-File: cubeLpUpRp.png Graphic file (type png)
-<use cubeLpUpRp.png>
-Package pdftex.def Info: cubeLpUpRp.png  used on input line 116.
+<moves/cubeLpUpRp.png, id=138, 808.01875pt x 806.01125pt>
+File: moves/cubeLpUpRp.png Graphic file (type png)
+<use moves/cubeLpUpRp.png>
+Package pdftex.def Info: moves/cubeLpUpRp.png  used on input line 116.
 (pdftex.def)             Requested size: 80.80661pt x 80.60583pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[2 <./cube.png> <./core_r_highlight.png> <./cube_r.png> <./core_r_transform.png> <./core.png>]
+[2 <./cube.png> <./moves/core_r_highlight.png> <./moves/cube_r.png> <./moves/core_r_transform.png> <./moves/core.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 147--148
 
  []
 
-[3 <./cubeLp.png> <./cubeLpUp.png> <./cubeLpUpRp.png>]
-<keygen.jpg, id=164, 2004.48875pt x 1020.81375pt>
-File: keygen.jpg Graphic file (type jpg)
-<use keygen.jpg>
-Package pdftex.def Info: keygen.jpg  used on input line 162.
+[3 <./moves/cubeLp.png> <./moves/cubeLpUp.png> <./moves/cubeLpUpRp.png>]
+<encryption/encryption.jpg, id=164, 2072.74374pt x 1557.82pt>
+File: encryption/encryption.jpg Graphic file (type jpg)
+<use encryption/encryption.jpg>
+Package pdftex.def Info: encryption/encryption.jpg  used on input line 162.
+(pdftex.def)             Requested size: 469.75502pt x 353.03781pt.
+ [4]
+<key_gen/keygen.jpg, id=172, 2004.48875pt x 1020.81375pt>
+File: key_gen/keygen.jpg Graphic file (type jpg)
+<use key_gen/keygen.jpg>
+Package pdftex.def Info: key_gen/keygen.jpg  used on input line 170.
 (pdftex.def)             Requested size: 469.75502pt x 239.22148pt.
- [4 <./keygen.jpg>] [5] [6] (./whitepaper.aux)
+ [5 <./encryption/encryption.jpg>] [6 <./key_gen/keygen.jpg>] [7] (./whitepaper.aux)
 Package rerunfilecheck Info: File `whitepaper.out' has not changed.
 (rerunfilecheck)             Checksum: BD694C52017009D8AC1738F724FB1FBD;3494.
  ) 
 Here is how much of TeX's memory you used:
- 23571 strings out of 479382
- 432478 string characters out of 5869398
- 699226 words of memory out of 5000000
- 41194 multiletter control sequences out of 15000+600000
+ 23584 strings out of 479382
+ 433030 string characters out of 5869398
+ 699225 words of memory out of 5000000
+ 41201 multiletter control sequences out of 15000+600000
  479959 words of font info for 69 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
  84i,9n,89p,782b,749s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/opt/local/share/texmf-texlive/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi12.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi8.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr17.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr7.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti12.pfb></opt/local/share/texmf-texlive/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on whitepaper.pdf (6 pages, 606558 bytes).
+Output written on whitepaper.pdf (7 pages, 1122095 bytes).
 PDF statistics:
- 242 PDF objects out of 1000 (max. 8388607)
- 191 compressed objects within 2 object streams
- 36 named destinations out of 1000 (max. 500000)
- 234 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 253 PDF objects out of 1000 (max. 8388607)
+ 200 compressed objects within 2 object streams
+ 38 named destinations out of 1000 (max. 500000)
+ 239 words of extra memory for PDF output out of 10000 (max. 10000000)
 
