@@ -101,6 +101,19 @@ fun main() = runBlocking {
     reverse order, the master key is applied with XOR, the S-box 
     is reversed, and finally, the plaintext is restored from its 
     binary form.
+
+    Encryption:
+
+    1. Each cube is initialized with a plaintext mapping as a starting state. Generate IV as a scramble and apply it to the first cube. Store this IV.
+
+    2. Find the most efficient solution to the scramble of the new state of the first cube. Store this algorithm as M. After M is safely stored, apply the corresponding cube-one sub-key to the first cube. It should be noted that sub-keys are formatted as scrambles (consists of letters FUBRLD).
+
+    3. Apply M to the plaintext-mapped cube two. Find the most efficient solution to the scramble of the new state of cube two. Store this algorithm as N. After N is safely stored, applying the corresponding cube-two sub-key to the second cube.
+
+    4. Repeat for all leftover cubes until the final cube (the final chunk of the original plaintext) is encrypted. 
+
+    5. Serialize the faces of all encrypted cubes in order (extract the encrypted bits of all cubes). Concatenate all of these serializations into a final ciphertext.
+
     */
 
     //val rubiksEncryptor = CubeEncryptor()
