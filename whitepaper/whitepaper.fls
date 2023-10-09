@@ -901,8 +901,8 @@ INPUT /opt/local/share/texmf-texlive/fonts/tfm/public/amsfonts/symbols/msam7.tfm
 INPUT /opt/local/share/texmf-texlive/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /opt/local/share/texmf-texlive/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /opt/local/share/texmf-texlive/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
-OUTPUT whitepaper.toc
 INPUT /opt/local/var/db/texmf/fonts/map/pdftex/updmap/pdftex.map
+OUTPUT whitepaper.toc
 INPUT /opt/local/share/texmf-texlive/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /opt/local/share/texmf-texlive/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /opt/local/share/texmf-texlive/fonts/tfm/public/amsfonts/symbols/msam5.tfm

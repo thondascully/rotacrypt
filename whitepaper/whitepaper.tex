@@ -39,13 +39,12 @@
 \newpage
 
 \section{Introduction}
-<...>
 
-\subsection{Review of Rubik's Cubes}
 Ah, the Rubik's Cube—the iconic toy that bedevils and delights in equal measure. Born from the ingenious mind of Ernő Rubik in 1974, it's more than just a puzzle. Forget mere child's play; this cube is chaos in the physical. Just kidding. To go from the state of chaos to order, one only needs to know a solving protocol of which many exist.
 
-Max Park, the current world record holder (11 June 2023) for the 2-handed solve, obliterated the cube in a mind-blowing 3.13 seconds. Lucky scramble? Hardly. Yiheng Wang, who holds the world record average-of-five, clocks in at a dizzying 4.48 second mean solve time throughout the five solves.\footnote{An average-of-five is determined by taking the average of the three "middle" solves in a session of five scramble. In other words, the worst and best solve time are dropped from the calculation for the average.} And no, I won't depress you by mentioning his tender age of nine years old. But let's not divert. The Rubik's Cube--a mathematical marvel and a cipher waiting to be cracked. \\
+\subsection{Review of Rubik's Cubes}
 
+Max Park, the current world record holder (11 June 2023) for the 2-handed solve, obliterated the cube in a mind-blowing 3.13 seconds. Lucky scramble? Hardly. Yiheng Wang, who holds the world record average-of-five, clocks in at a dizzying 4.48 second mean solve time throughout the five solves.\footnote{An average-of-five is determined by taking the average of the three "middle" solves in a session of five scramble. In other words, the worst and best solve time are dropped from the calculation for the average.} And no, I won't depress you by mentioning his tender age of nine years old. But let's not divert. The Rubik's Cube--a mathematical marvel and a cipher waiting to be cracked. \\
 \begin{figure}[h]
     \centering
     \begin{minipage}[c]{0.2\textwidth}
@@ -172,9 +171,7 @@ While the increase in state space significantly boosts the algorithm's resilienc
 
 \section{Overview}
 
-The proposed encryption scheme is a block cipher that leverages the mathematical complexities and state space of Rubik's Cubes. Each block in the scheme consists of pairs of six 3x3x3 Rubik's Cubes, effectively rendering a block size of 144 bits. At the start of the encryption process, each pair of cubes is initialized to the solved state and then scrambled based on the corresponding plaintext bits.
-
-\subsection{Scheme Overview}
+\subsection{Scheme Proposal}
 
 \begin{figure}[H]
     \centering
@@ -182,13 +179,20 @@ The proposed encryption scheme is a block cipher that leverages the mathematical
     \caption{Rotacrypt Encryption Overview}
 \end{figure}
 
+The proposed encryption scheme is a block cipher that leverages the mathematical complexities and state space of Rubik's Cubes. Each block in the scheme utilizes a tuple of six 3x3x3 Rubik's Cubes, effectively rendering a block size of 144 bits (24 bits per cube; 6 cubes). At the start of the encryption process, each cube is initialized to the solved state and then a corresponding-plaintext-bit-to-3x3x3-layer-operation-mapping is applied. The details of this progress can be found in the \textit{Encryption / Cube Mapping Procedure} section. This will yield six unique cube states.
 
+\subsection{Initial Round}
+The initial round begins by applying a cryptographically secure pseudorandom number generated Initialization Vector (IV) deserialized into six unique scrambles. Each cube in the tuple will have their own unique scramble at this stage, and a dynamic subkey is then generated from the original key using a secure key derivation function. The subkey is likewise deserialized into six unique scrambles. Each scramble is applied to their respective cube. The cubes finally undergo a series of deterministic Rubik's moves, mimicking the traditional S-box and diffusion operations in AES like SubBytes, ShiftRows, and MixColumns. These Rubik's moves are termed as SubCubes, ShiftFaces, and MixEdges respectively. It should be noted that the nature of layer operations intrinsically involves a form of diffusion, making the scheme's diffusion already naturally high without S-box operations. The resultant state of the cubes serves as the ciphertext for that block.
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=\textwidth]{key_gen/keygen.jpg}
-    \caption{beep boop}
-\end{figure}
+\subsection{Subsequent Rounds}
+For subsequent rounds, a part of the cube state from the previous round is extracted and used as the IV for the next block. New subkeys are generated dynamically by hashing the original key along with a salt (detailed in the \textit{Key Generation / Sub-Key Generation} section), which is then converted into a Rubik's Cube scramble sequence. The same sequence of operations: SubCubes, ShiftFaces, and MixEdges, are then applied to these new blocks, followed by scrambling with the round-specific subkey.
+
+The state of the cubes after the S-box operation is used to link subsequent blocks, ensuring that the entire encryption process influences each block. This design decision not only maximizes the use of the large Rubik's Cube state space but also provides strong cryptographic properties.
+
+We are chaining blocks to increase diffusion. A blockchain if you must.
+\subsection{Final Round}
+
+(MAYBE... TBD) In the final round, the processed cubes go through an S-box transformation to further improve the security of the encrypted data. This S-box is carefully designed to maximize non-linearity and is dynamically generated based on the cube's final state.
 
 \subsection{Purpose}
 There is no purpose. I was told not to make a cryptosystem, so I did the opposite.
@@ -208,7 +212,12 @@ There is no purpose. I was told not to make a cryptosystem, so I did the opposit
 \subsection{Cyclic Transformations}
 
 \section{Key Generation}
-<...>
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{key_gen/keygen.jpg}
+    \caption{beep boop}
+\end{figure}
 
 \subsection{4-Cube Initialization}
 <...>
@@ -232,6 +241,15 @@ There is no purpose. I was told not to make a cryptosystem, so I did the opposit
 <...>
 
 \section{Decryption}
-<...>
+
+\subsection{Beep Boop}
+
+\section{Security Analysis}
+
+\subsection{Immediate Reduction to AES}
+
+\section{Codebase Architecture}
+
+\subsection{Architecture Tree}
 
 \end{document}

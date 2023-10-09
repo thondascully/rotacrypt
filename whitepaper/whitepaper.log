@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/MacPorts 2022.62882_2) (preloaded format=pdflatex 2023.3.15)  9 OCT 2023 07:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/MacPorts 2022.62882_2) (preloaded format=pdflatex 2023.3.15)  9 OCT 2023 07:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -586,114 +586,110 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Trying to load font information for U+msb on input line 32.
  (/opt/local/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (./whitepaper.toc)
+) (./whitepaper.toc [1
+
+{/opt/local/var/db/texmf/fonts/map/pdftex/updmap/pdftex.map}])
 \tf@toc=\write5
 \openout5 = `whitepaper.toc'.
 
- [1
-
-{/opt/local/var/db/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 47--48
-
- []
-
-<cube.png, id=139, 809.0225pt x 806.01125pt>
+ [2]
+<cube.png, id=184, 809.0225pt x 806.01125pt>
 File: cube.png Graphic file (type png)
 <use cube.png>
-Package pdftex.def Info: cube.png  used on input line 52.
+Package pdftex.def Info: cube.png  used on input line 51.
 (pdftex.def)             Requested size: 80.90698pt x 80.60583pt.
-<moves/core_r_highlight.png, id=141, 808.01875pt x 806.01125pt>
+<moves/core_r_highlight.png, id=186, 808.01875pt x 806.01125pt>
 File: moves/core_r_highlight.png Graphic file (type png)
 <use moves/core_r_highlight.png>
-Package pdftex.def Info: moves/core_r_highlight.png  used on input line 55.
+Package pdftex.def Info: moves/core_r_highlight.png  used on input line 54.
 (pdftex.def)             Requested size: 80.80661pt x 80.60583pt.
 
-Overfull \hbox (6.56357pt too wide) in paragraph at lines 61--62
+Overfull \hbox (6.56357pt too wide) in paragraph at lines 60--61
  [][] 
  []
 
-<moves/cube_r.png, id=142, 808.01875pt x 806.01125pt>
+<moves/cube_r.png, id=187, 808.01875pt x 806.01125pt>
 File: moves/cube_r.png Graphic file (type png)
 <use moves/cube_r.png>
-Package pdftex.def Info: moves/cube_r.png  used on input line 65.
+Package pdftex.def Info: moves/cube_r.png  used on input line 64.
 (pdftex.def)             Requested size: 80.80661pt x 80.60583pt.
-<moves/core_r_transform.png, id=143, 808.01875pt x 806.01125pt>
+<moves/core_r_transform.png, id=188, 808.01875pt x 806.01125pt>
 File: moves/core_r_transform.png Graphic file (type png)
 <use moves/core_r_transform.png>
-Package pdftex.def Info: moves/core_r_transform.png  used on input line 68.
+Package pdftex.def Info: moves/core_r_transform.png  used on input line 67.
 (pdftex.def)             Requested size: 80.80661pt x 80.60583pt.
-<moves/core.png, id=144, 808.01875pt x 806.01125pt>
+<moves/core.png, id=189, 808.01875pt x 806.01125pt>
 File: moves/core.png Graphic file (type png)
 <use moves/core.png>
-Package pdftex.def Info: moves/core.png  used on input line 79.
+Package pdftex.def Info: moves/core.png  used on input line 78.
 (pdftex.def)             Requested size: 80.80661pt x 80.60583pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--92
+Underfull \hbox (badness 10000) in paragraph at lines 90--91
 
  []
 
-<moves/cubeLp.png, id=146, 808.01875pt x 806.01125pt>
+<moves/cubeLp.png, id=191, 808.01875pt x 806.01125pt>
 File: moves/cubeLp.png Graphic file (type png)
 <use moves/cubeLp.png>
-Package pdftex.def Info: moves/cubeLp.png  used on input line 96.
+Package pdftex.def Info: moves/cubeLp.png  used on input line 95.
 (pdftex.def)             Requested size: 80.80661pt x 80.60583pt.
 
-Overfull \hbox (6.56357pt too wide) in paragraph at lines 102--103
+Overfull \hbox (6.56357pt too wide) in paragraph at lines 101--102
  [][] 
  []
 
-<moves/cubeLpUp.png, id=147, 808.01875pt x 806.01125pt>
+<moves/cubeLpUp.png, id=192, 808.01875pt x 806.01125pt>
 File: moves/cubeLpUp.png Graphic file (type png)
 <use moves/cubeLpUp.png>
-Package pdftex.def Info: moves/cubeLpUp.png  used on input line 106.
+Package pdftex.def Info: moves/cubeLpUp.png  used on input line 105.
 (pdftex.def)             Requested size: 80.80661pt x 80.60583pt.
 
-Overfull \hbox (6.56357pt too wide) in paragraph at lines 112--113
+Overfull \hbox (6.56357pt too wide) in paragraph at lines 111--112
  [][] 
  []
 
-<moves/cubeLpUpRp.png, id=148, 808.01875pt x 806.01125pt>
+<moves/cubeLpUpRp.png, id=193, 808.01875pt x 806.01125pt>
 File: moves/cubeLpUpRp.png Graphic file (type png)
 <use moves/cubeLpUpRp.png>
-Package pdftex.def Info: moves/cubeLpUpRp.png  used on input line 116.
+Package pdftex.def Info: moves/cubeLpUpRp.png  used on input line 115.
 (pdftex.def)             Requested size: 80.80661pt x 80.60583pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[2 <./cube.png> <./moves/core_r_highlight.png> <./moves/cube_r.png> <./moves/core_r_transform.png> <./moves/core.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 147--148
+[3 <./cube.png> <./moves/core_r_highlight.png> <./moves/cube_r.png> <./moves/core_r_transform.png> <./moves/core.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
 
  []
 
-[3 <./moves/cubeLp.png> <./moves/cubeLpUp.png> <./moves/cubeLpUpRp.png>] [4]
-<encryption/encryption.jpg, id=183, 2072.74374pt x 1557.82pt>
+[4 <./moves/cubeLp.png> <./moves/cubeLpUp.png> <./moves/cubeLpUpRp.png>] [5]
+<encryption/encryption.jpg, id=227, 2072.74374pt x 1557.82pt>
 File: encryption/encryption.jpg Graphic file (type jpg)
 <use encryption/encryption.jpg>
-Package pdftex.def Info: encryption/encryption.jpg  used on input line 181.
+Package pdftex.def Info: encryption/encryption.jpg  used on input line 178.
 (pdftex.def)             Requested size: 469.75502pt x 353.03781pt.
- [5]
-<key_gen/keygen.jpg, id=188, 2004.48875pt x 1020.81375pt>
+ [6 <./encryption/encryption.jpg>] [7]
+<key_gen/keygen.jpg, id=238, 2004.48875pt x 1020.81375pt>
 File: key_gen/keygen.jpg Graphic file (type jpg)
 <use key_gen/keygen.jpg>
-Package pdftex.def Info: key_gen/keygen.jpg  used on input line 189.
+Package pdftex.def Info: key_gen/keygen.jpg  used on input line 218.
 (pdftex.def)             Requested size: 469.75502pt x 239.22148pt.
- [6 <./encryption/encryption.jpg>] [7 <./key_gen/keygen.jpg>] [8] (./whitepaper.aux)
+ [8 <./key_gen/keygen.jpg>] [9] (./whitepaper.aux)
 Package rerunfilecheck Info: File `whitepaper.out' has not changed.
-(rerunfilecheck)             Checksum: 51A7E457D15638374358BD7720132F57;3898.
+(rerunfilecheck)             Checksum: 0652879F300935A01E7F264F833B424D;5019.
  ) 
 Here is how much of TeX's memory you used:
- 23589 strings out of 479382
- 433096 string characters out of 5869398
- 700225 words of memory out of 5000000
- 41203 multiletter control sequences out of 15000+600000
+ 23606 strings out of 479382
+ 433322 string characters out of 5869398
+ 700239 words of memory out of 5000000
+ 41211 multiletter control sequences out of 15000+600000
  479959 words of font info for 69 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
- 84i,9n,89p,782b,749s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,10n,89p,1043b,749s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/opt/local/share/texmf-texlive/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi12.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi8.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr17.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr7.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy8.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti12.pfb></opt/local/share/texmf-texlive/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on whitepaper.pdf (8 pages, 1134012 bytes).
+Output written on whitepaper.pdf (9 pages, 1141098 bytes).
 PDF statistics:
- 273 PDF objects out of 1000 (max. 8388607)
- 216 compressed objects within 3 object streams
- 41 named destinations out of 1000 (max. 500000)
- 255 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 319 PDF objects out of 1000 (max. 8388607)
+ 261 compressed objects within 3 object streams
+ 50 named destinations out of 1000 (max. 500000)
+ 319 words of extra memory for PDF output out of 10000 (max. 10000000)
 
