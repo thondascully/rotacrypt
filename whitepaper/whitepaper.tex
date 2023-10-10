@@ -208,8 +208,15 @@ One may question the intent of an S-box operation if the layer operations alread
 
 \begin{itemize}
     \item \textbf{S-box}: A substition box is a cryptographic component that performs fixed, non-linear substitutions on input bits to produce output bits.
+    \item \textbf{Initialization Vector (IV)}: A cryptographically secure random number that is applied during initial encryption, ensuring distinct encrypted data every time (even with equivalent plaintext inputs). This technique disrupts pattern recognition attempts, particularly in chosen-plaintext attacks.
+    \item \textbf{Subkey}: A subkey is a key derived from a master key for use in a particular cryptographic algorithm. In this scheme, subkeys are generated dynamically for each block.
+    \item \textbf{Diffusion}: Diffusion is a cryptographic concept that refers to the spreading of plaintext information throughout the ciphertext, making it difficult to decipher.
+    \item \textbf{Linear Transformations}: Linear transformations are mathematical operations that preserve the structure of the underlying space, such as rotations and reflections.
+    \item \textbf{Block Cipher}: Encrypts chunks of plaintext data (blocks) using unique subkeys for each block.
+    \item \textbf{Chaining}: Linking the encryption of one block with the next, making the entire data set more secure and diffused by causing a ripple effect throughout the blocks.
+    \item \textbf{Serialization}: Turning the cube's state into a simple format like a string or array for easier data handling.
     \item \textbf{Plaintext and Ciphertext}: In cryptography, plaintext refers to the original readable message, while ciphertext is the scrambled message produced through encryption.
-    \item \textbf{State Space}: The state space refers to the total number of possible configurations or states that a system can be in; for a cube, it's a very large number. Maybe not yet large enough?
+    \item \textbf{State Space}: The state space refers to the total number of possible configurations or states that a system can be in; for a cube, it's a very large number.
     \item \textbf{Six Cube Tuple}: In this scheme, a tuple refers to an ordered set of six individual Rubik's Cubes, each contributing to the encryption process.
     \item \textbf{Brute-force attacks}: In cryptography, a brute-force attack involves trying all possible combinations to decrypt a message, which is computationally expensive.
     \item \textbf{Parallelization}: Parallelization refers to the process of dividing a task into sub-tasks that are solved concurrently, often used to speed up computational tasks.
