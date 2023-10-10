@@ -44,7 +44,7 @@ Ah, the Rubik's Cube—the iconic toy that bedevils and delights in equal measur
 
 \subsection{Review of Rubik's Cubes}
 
-Max Park, the current world record holder (11 June 2023) for the 2-handed solve, obliterated the cube in a mind-blowing 3.13 seconds. Lucky scramble? Hardly. Yiheng Wang, who holds the world record average-of-five, clocks in at a dizzying 4.48 second mean solve time throughout the five solves.\footnote{An average-of-five is determined by taking the average of the three "middle" solves in a session of five scramble. In other words, the worst and best solve time are dropped from the calculation for the average.} And no, I won't depress you by mentioning his tender age of nine years old. But let's not divert. The Rubik's Cube--a mathematical marvel and a cipher waiting to be cracked. \\
+Max Park, the current world record holder (11 June 2023) for the 2-handed solve, obliterated the cube in a mind-blowing 3.13 seconds. Lucky scramble? Hardly. Yiheng Wang, who holds the world record average-of-five, clocks in at a dizzying 4.48 second mean solve time throughout the five solves.\footnote{An average-of-five is determined by taking the average of the three "middle" solves in a session of five scramble. In other words, the worst and best solve time are dropped from the calculation for the average.} And no, I won't depress you by mentioning his tender age of nine years old. But let's not divert. The Rubik's Cube--a mathematical marvel and a plaintext waiting to be encrypted. \\
 \begin{figure}[h]
     \centering
     \begin{minipage}[c]{0.2\textwidth}
@@ -168,6 +168,19 @@ In this enhanced scheme, each block of plaintext is split into six portions, eac
 The chaining of six cubes per block substantially complicates the task of deciphering the ciphertext without knowledge of the encryption key, thereby augmenting the cryptographic strength of the scheme. With a state space of \(2^{24 \times 6}\), the algorithm becomes computationally prohibitive for brute-force attacks, even when accounting for potential parallelization.
 
 While the increase in state space significantly boosts the algorithm's resilience against attacks, it also introduces additional computational complexity. However, the impact on efficiency is deemed acceptable given the substantial increase in cryptographic security.
+
+\subsection{Summary}
+
+The \textit{Introduction} can be summarized with the following points:
+
+\begin{itemize}
+    \item \textbf{3x3x3 Mechanics}: The cube boasts centers, edges, and corners. The six unique single-colored center pieces serve as the invariant axis around which the peripheral cubies rotate.
+    \item \textbf{State Space}: The cube has 6 faces, each with 9 stickers. Notably, this means that there exists 54 different unit tiles on the cube. The cube has 43,252,003,274,489,856,000 possible states.
+    \item \textbf{Increasing State Space}: Let \( N \) represent the number of unique states for a single Rubik's Cube. For \( k \) chained Rubik's Cubes, the total number of unique states is \( N^k \). 
+    \item \textbf{No More Colors}: In this scheme, colors are not mapped to units on the cube. Instead, each plaintext bit (either a 0 or 1) is mapped to a specific piece on the cube. As centers are immutable, they are not used to represent bits (only 48 movable units).
+    \item \textbf{Mapping Constraints}: One should note that edges cannot morph into corners and vice versa. Therefore, bits are only assigned exclusively to either edges or corners (24 potential bit mappings per cube), thus limiting the state space to \(2^{24}\) for each cube.
+    \item \textbf{Increasing State Space Again}: By employing a tuple of six Rubik's Cubes for each block, the scheme effectively increases the state space to \(2^{(24 \times 6)}\), yielding \(2^{144}\) possible states per cube.
+\end{itemize}
 
 \section{Overview}
 
