@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/MacPorts 2022.62882_2) (preloaded format=pdflatex 2023.3.15)  10 OCT 2023 04:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/MacPorts 2022.62882_2) (preloaded format=pdflatex 2023.3.15)  10 OCT 2023 05:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -593,12 +593,12 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout5 = `whitepaper.toc'.
 
  [2]
-<cube.png, id=184, 809.0225pt x 806.01125pt>
+<cube.png, id=185, 809.0225pt x 806.01125pt>
 File: cube.png Graphic file (type png)
 <use cube.png>
 Package pdftex.def Info: cube.png  used on input line 51.
 (pdftex.def)             Requested size: 80.90698pt x 80.60583pt.
-<moves/core_r_highlight.png, id=186, 808.01875pt x 806.01125pt>
+<moves/core_r_highlight.png, id=187, 808.01875pt x 806.01125pt>
 File: moves/core_r_highlight.png Graphic file (type png)
 <use moves/core_r_highlight.png>
 Package pdftex.def Info: moves/core_r_highlight.png  used on input line 54.
@@ -608,12 +608,12 @@ Overfull \hbox (6.56357pt too wide) in paragraph at lines 60--61
  [][] 
  []
 
-<moves/cube_r.png, id=187, 808.01875pt x 806.01125pt>
+<moves/cube_r.png, id=188, 808.01875pt x 806.01125pt>
 File: moves/cube_r.png Graphic file (type png)
 <use moves/cube_r.png>
 Package pdftex.def Info: moves/cube_r.png  used on input line 64.
 (pdftex.def)             Requested size: 80.80661pt x 80.60583pt.
-<moves/core_r_transform.png, id=188, 808.01875pt x 806.01125pt>
+<moves/core_r_transform.png, id=189, 808.01875pt x 806.01125pt>
 File: moves/core_r_transform.png Graphic file (type png)
 <use moves/core_r_transform.png>
 Package pdftex.def Info: moves/core_r_transform.png  used on input line 67.
@@ -662,34 +662,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 146--147
  []
 
 [4 <./moves/cubeLp.png> <./moves/cubeLpUp.png> <./moves/cubeLpUpRp.png>] [5] [6]
-<encryption/encryption.jpg, id=233, 2072.74374pt x 1557.82pt>
+<encryption/encryption.jpg, id=250, 2072.74374pt x 1557.82pt>
 File: encryption/encryption.jpg Graphic file (type jpg)
 <use encryption/encryption.jpg>
 Package pdftex.def Info: encryption/encryption.jpg  used on input line 197.
-(pdftex.def)             Requested size: 469.75502pt x 353.03781pt.
- [7 <./encryption/encryption.jpg>] [8] [9]
-<key_gen/keygen.jpg, id=249, 2004.48875pt x 1020.81375pt>
+(pdftex.def)             Requested size: 422.77664pt x 317.73878pt.
+ [7 <./encryption/encryption.jpg>] [8]
+<key_gen/keygen.jpg, id=274, 2004.48875pt x 1020.81375pt>
 File: key_gen/keygen.jpg Graphic file (type jpg)
 <use key_gen/keygen.jpg>
-Package pdftex.def Info: key_gen/keygen.jpg  used on input line 260.
+Package pdftex.def Info: key_gen/keygen.jpg  used on input line 238.
 (pdftex.def)             Requested size: 469.75502pt x 239.22148pt.
- [10 <./key_gen/keygen.jpg>] [11] (./whitepaper.aux)
+ [9 <./key_gen/keygen.jpg>] [10] (./whitepaper.aux)
 Package rerunfilecheck Info: File `whitepaper.out' has not changed.
 (rerunfilecheck)             Checksum: E40A38CDC2D6BF33A66EC04D1DDEAAE5;4976.
  ) 
 Here is how much of TeX's memory you used:
- 23611 strings out of 479382
- 433371 string characters out of 5869398
+ 23623 strings out of 479382
+ 433514 string characters out of 5869398
  700241 words of memory out of 5000000
- 41212 multiletter control sequences out of 15000+600000
- 480318 words of font info for 70 fonts, out of 8000000 for 9000
+ 41211 multiletter control sequences out of 15000+600000
+ 479959 words of font info for 69 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
- 84i,10n,89p,1043b,749s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/opt/local/share/texmf-texlive/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi12.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi8.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr17.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr7.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy8.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti12.pfb></opt/local/share/texmf-texlive/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on whitepaper.pdf (11 pages, 1159652 bytes).
+ 84i,10n,89p,1932b,749s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/opt/local/share/texmf-texlive/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi12.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi8.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr17.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr7.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy8.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti12.pfb></opt/local/share/texmf-texlive/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on whitepaper.pdf (10 pages, 1153946 bytes).
 PDF statistics:
- 334 PDF objects out of 1000 (max. 8388607)
- 272 compressed objects within 3 object streams
- 53 named destinations out of 1000 (max. 500000)
+ 358 PDF objects out of 1000 (max. 8388607)
+ 299 compressed objects within 3 object streams
+ 67 named destinations out of 1000 (max. 500000)
  319 words of extra memory for PDF output out of 10000 (max. 10000000)
 

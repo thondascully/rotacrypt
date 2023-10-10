@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1696938999 "/Users/thondascully/Projects/rotacrypt/whitepaper/whitepaper.tex" "whitepaper.pdf" "whitepaper" 1696938999 0
-  "/Users/thondascully/Projects/rotacrypt/whitepaper/whitepaper.tex" 1696938998 19369 988cf6d215e8e349be3cffcb2e2a3686 ""
+["pdflatex"] 1696941795 "/Users/thondascully/Projects/rotacrypt/whitepaper/whitepaper.tex" "whitepaper.pdf" "whitepaper" 1696941795 0
+  "/Users/thondascully/Projects/rotacrypt/whitepaper/whitepaper.tex" 1696941794 18401 eb19640ce0ba159fdf350239006f37df ""
   "/opt/local/etc/texmf/texmf.cnf" 1678889952 38222 86600ffd55a0fce672e31a15d690ee55 ""
   "/opt/local/share/texmf-texlive/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1556757304 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/opt/local/share/texmf-texlive/fonts/map/fontname/texfonts.map" 1583632499 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -15,7 +15,6 @@
   "/opt/local/share/texmf-texlive/fonts/tfm/public/amsfonts/symbols/msbm7.tfm" 1556757451 940 228d6584342e91276bf566bcf9716b83 ""
   "/opt/local/share/texmf-texlive/fonts/tfm/public/cm/cmbx10.tfm" 1556757456 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/opt/local/share/texmf-texlive/fonts/tfm/public/cm/cmbx12.tfm" 1556757456 1324 c910af8c371558dc20f2d7822f66fe64 ""
-  "/opt/local/share/texmf-texlive/fonts/tfm/public/cm/cmbxti10.tfm" 1556757456 1532 9162035f4e7176612125649e348e2195 ""
   "/opt/local/share/texmf-texlive/fonts/tfm/public/cm/cmex10.tfm" 1556757456 992 662f679a0b3d2d53c1b94050fdaa3f50 ""
   "/opt/local/share/texmf-texlive/fonts/tfm/public/cm/cmmi12.tfm" 1556757456 1524 4414a8315f39513458b80dfc63bff03a ""
   "/opt/local/share/texmf-texlive/fonts/tfm/public/cm/cmmi6.tfm" 1556757456 1512 f21f83efb36853c0b70002322c1ab3ad ""
@@ -31,7 +30,6 @@
   "/opt/local/share/texmf-texlive/fonts/tfm/public/cm/cmti12.tfm" 1556757456 1484 ed72f8f5cf654cda15ecc8e32bfcbee5 ""
   "/opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1556757566 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "/opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1556757566 32080 340ef9bf63678554ee606688e7b5339d ""
-  "/opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbxti10.pfb" 1556757566 36554 b67dc2cfa451409e100b3fcf5f506509 ""
   "/opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1556757566 36741 fa121aac0049305630cf160b86157ee4 ""
   "/opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1556757566 35469 70d41d2b9ea31d5d813066df7c99281c ""
   "/opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1556757566 35752 024fb6c41858982481f6968b5fc26508 ""
@@ -183,10 +181,10 @@
   "moves/cubeLpUp.png" 1696516027 7917 4f4db1fa84a51ecdb8316691e915f323 ""
   "moves/cubeLpUpRp.png" 1696516027 8064 5f447ac5a87cbeb865c0c7183634b59a ""
   "moves/cube_r.png" 1696470457 8053 cda3b1e723255b6a0b88f96a08197009 ""
-  "whitepaper.aux" 1696938999 5351 3ac40784c4f5abd0f86c384a9eb5c328 "pdflatex"
-  "whitepaper.out" 1696938999 4976 e40a38cdc2d6bf33a66ec04d1ddeaae5 "pdflatex"
-  "whitepaper.tex" 1696938998 19369 988cf6d215e8e349be3cffcb2e2a3686 ""
-  "whitepaper.toc" 1696938999 2670 e3d2366505ddfee94ea64f0176479377 "pdflatex"
+  "whitepaper.aux" 1696941795 5345 2d5e888fe5a0e7d12f335901db891660 "pdflatex"
+  "whitepaper.out" 1696941795 4976 e40a38cdc2d6bf33a66ec04d1ddeaae5 "pdflatex"
+  "whitepaper.tex" 1696941794 18401 eb19640ce0ba159fdf350239006f37df ""
+  "whitepaper.toc" 1696941795 2665 a1324efa55fa2b126362530f8fe03f5e "pdflatex"
   (generated)
   "whitepaper.aux"
   "whitepaper.log"

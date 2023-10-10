@@ -44,7 +44,7 @@ Ah, the Rubik's Cube—the iconic toy that bedevils and delights in equal measur
 
 \subsection{Review of Rubik's Cubes}
 
-Max Park, the current world record holder (11 June 2023) for the 2-handed solve, obliterated the cube in a mind-blowing 3.13 seconds. Lucky scramble? Hardly. Yiheng Wang, who holds the world record average-of-five, clocks in at a dizzying 4.48 second mean solve time throughout the five solves.\footnote{An average-of-five is determined by taking the average of the three "middle" solves in a session of five scramble. In other words, the worst and best solve time are dropped from the calculation for the average.} And no, I won't depress you by mentioning his tender age of nine years old. But let's not divert. The Rubik's Cube--a mathematical marvel and a plaintext waiting to be encrypted. \\
+Max Park, the current world record holder (11 June 2023) for the 2-handed solve, obliterated the cube in a mind-blowing 3.13 seconds. Lucky scramble? Hardly. Yiheng Wang, who holds the world record average-of-five, clocks in at a dizzying 4.48 second mean solve time throughout the five solves.\footnote{An average-of-five is determined by taking the average of the three "middle" solves in a session of five scramble. In other words, the worst and best solve time are dropped from the calculation for the average.} And no, I won't depress you by mentioning his tender age of nine years old. But let's not divert. The Rubik's Cube--a mathematical marvel and a plaintext\footnote{In cryptography, plaintext refers to the original readable message, while ciphertext is the scrambled message produced through encryption.} waiting to be encrypted. \\
 \begin{figure}[h]
     \centering
     \begin{minipage}[c]{0.2\textwidth}
@@ -69,7 +69,7 @@ Max Park, the current world record holder (11 June 2023) for the 2-handed solve,
     \caption{A visualization of the \textit{R} operation (rotating the right layer clockwise).}
 \end{figure}
 
-Let's dive into the mechanics of the 3x3x3 puzzle. The cube boasts centers, edges, and corners. These single-colored center pieces serve as the invariant axis around which the peripheral cubies rotate.\footnote{The smaller individual blocks that make up a Rubik's Cube are referred to as cubies.} The six unit colors are yellow, blue, red, green, orange, and white.
+Let's dive into the mechanics of the 3x3x3 puzzle. The cube boasts centers, edges, and corners. The single-colored center pieces serve as the invariant axis around which the peripheral smaller unit cubes rotate. The six unit colors are yellow, blue, red, green, orange, and white.
 
 \begin{figure}[h]
     \hfill 
@@ -146,28 +146,28 @@ In the realm of 3x3x3 Rubik's Cubes, \textit{God's Number} is a term used to den
 Furthermore, this means that any scramble can be reached with 20 moves or fewer. This is a key point to keep in mind when considering the security of the cube as a cryptographic primitive as well as for key size considerations.\\
 
 \subsection{Combinatorial Explosion with Multiple Cubes}
-Let us consider the number of possible states for a single 3x3x3 Rubik's Cube, which is \(43,252,003,274,489,856,000\). When chaining together the combinations of two different cubes, the number of combined states is \((43,252,003,274,489,856,000)^2\).
+Let us consider the number of possible states for a single 3x3x3 Rubik's Cube, which is \(43,252,003,274,489,856,000\). When chaining\footnote{Linking the encryption of one block with the next, making the entire data set more secure and diffused by causing a ripple effect throughout the blocks.} together the combinations of two different cubes, the number of combined states is \((43,252,003,274,489,856,000)^2\).
 
 This squaring occurs because each state of the first cube can pair with every state of the second cube, yielding \(43,252,003,274,489,856,000 \times 43,252,003,274,489,856,000\). Mathematically, the set of possible states becomes the Cartesian product of the two sets of states, leading to an exponential increase in complexity.
 
-One intriguing aspect of chaining multiple Rubik's Cubes is the exponential growth in the state space. Let \( N \) represent the number of unique states for a single Rubik's Cube. For \( k \) chained Rubik's Cubes, the total number of unique states becomes \( N^k \). This exponential increase serves a critical function: it substantially minimizes the likelihood of collisions whilst simultaneously increasing the difficulty of brute-force attacks.
+One intriguing aspect of chaining multiple Rubik's Cubes is the exponential growth in the state space\footnote{The state space refers to the total number of possible configurations or states that a system can be in; for a cube, it's a very large number.}. Let \( N \) represent the number of unique states for a single Rubik's Cube. For \( k \) chained Rubik's Cubes, the total number of unique states becomes \( N^k \). This exponential increase serves a critical function: it substantially minimizes the likelihood of collisions whilst simultaneously increasing the difficulty of brute-force attacks.\footnote{In cryptography, a brute-force attack involves trying all possible combinations to decrypt a message, which is computationally expensive.}
 
 \subsection{Edge and Corner Constraints}
 
 While the utilization of multiple Rubik's Cubes in the encryption scheme introduces a combinatorial explosion in the state space, it is essential to consider the limitations imposed by the unique mapping of plaintext bits to cube pieces. In this scheme, each plaintext bit (either a 0 or 1) is mapped to a specific piece on the cube, which can either be an edge or a corner.
 
-One of the fundamental constraints of a Rubik's Cube is that edges and corners are immutable in their categories; edges cannot morph into corners and vice versa. Due to this constraint, it becomes inappropriate to assign all 48 movable units (54 total units minus 6 centers) to represent bits, as doing so would leave patterns in trivial plaintext-to-ciphertext cryptanalysis attacks. If a bit mapped to a corner unit can never be encrypted into an edge piece no matter how many layer operations occur, this serves as a trivial pattern in which cryptanalysists can exploit.
+One of the fundamental constraints\footnote{These are the limitations imposed by the physical structure of the Rubik's Cube, like the inability to change an edge piece into a corner piece.} of a Rubik's Cube is that edges and corners are immutable in their categories; edges cannot morph into corners and vice versa. Due to this constraint, it becomes inappropriate to assign all 48 movable units (54 total units minus 6 centers) to represent bits, as doing so would leave patterns in trivial plaintext-to-ciphertext cryptanalysis attacks.\footnote{Cryptanalysis attacks involve mathematical and computational techniques to analyze and possibly break an encryption scheme.} If a bit mapped to a corner unit can never be encrypted into an edge piece no matter how many layer operations occur, this serves as a trivial pattern in which cryptanalysists can exploit.
 
 \subsection{Per-Cube 24-bit State Space}
 As a result of the aforementioned limitations, the encryption scheme opts for a more constrained assignment by sticking to either edges or corners to represent the bits. This decision narrows down the number of units used for bit representation to 24, thus limiting the state space to \(2^{24}\) for each cube.
 
-Given the inherent limitations in the state space of a single Rubik's Cube, capped at \(2^{24}\) due to geometric constraints, a novel approach to enlarging this space involves chaining multiple cubes together. Specifically, by employing a tuple of six Rubik's Cubes for each block, the scheme effectively increases the state space to \(2^{(24 \times 6)}\).
+Given the inherent limitations in the state space of a single Rubik's Cube, capped at \(2^{24}\) due to geometric constraints, a novel approach to enlarging this space involves chaining multiple cubes together. Specifically, by employing a tuple of six Rubik's Cubes\footnote{In this scheme, a tuple refers to an ordered set of six individual Rubik's Cubes, each contributing to the encryption process.} for each block, the scheme effectively increases the state space to \(2^{(24 \times 6)}\).
 
 In this enhanced scheme, each block of plaintext is split into six portions, each of which is mapped onto a separate cube. The combined state of all six cubes serves as a unique representation of the original block. This approach leverages the geometric diversity across multiple cubes to create a more complicated and less predictable state space.
 
-The chaining of six cubes per block substantially complicates the task of deciphering the ciphertext without knowledge of the encryption key, thereby augmenting the cryptographic strength of the scheme. With a state space of \(2^{(24 \times 6)}\), the algorithm becomes computationally prohibitive for brute-force attacks, even when accounting for potential parallelization.
+With a state space of \(2^{(24 \times 6)}\), the algorithm becomes computationally prohibitive for brute-force attacks, even when accounting for potential parallelization.\footnote{Parallelization refers to the process of dividing a task into sub-tasks that are solved concurrently, often used to speed up computational tasks.}
 
-While the increase in state space significantly boosts the algorithm's resilience against attacks, it also introduces additional computational complexity. However, the impact on efficiency is deemed acceptable given the substantial increase in cryptographic security.
+While the increase in state space significantly boosts the algorithm's resilience against attacks, it also introduces additional computational complexity. However, the impact on efficiency is deemed acceptable given the substantial increase in cryptographic security.\footnote{The term refers to the resilience of a cryptographic system against unauthorized access or data breaches.}
 
 \subsection{Summary}
 
@@ -179,14 +179,14 @@ The \textit{Introduction} can be summarized with the following points:
     \item \textbf{Increasing State Space}: Let \( N \) represent the number of unique states for a single Rubik's Cube. For \( k \) chained Rubik's Cubes, the total number of unique states is \( N^k \). 
     \item \textbf{No More Colors}: In this scheme, colors are not mapped to units on the cube. Instead, each plaintext bit (either a 0 or 1) is mapped to a specific piece on the cube. As centers are immutable, they are not used to represent bits (only 48 movable units).
     \item \textbf{Mapping Constraints}: One should note that edges cannot morph into corners and vice versa. Therefore, bits are only assigned exclusively to either edges or corners (24 potential bit mappings per cube), thus limiting the state space to \(2^{24}\) for each cube.
-    \item \textbf{Increasing State Space Again}: By employing a tuple of six Rubik's Cubes for each block, the scheme effectively increases the state space to \(2^{(24 \times 6)}\), yielding \(2^{144}\) possible states per cube.
+    \item \textbf{State Space Again}: By employing a tuple of six Rubik's Cubes for each block, the scheme effectively increases the state space to \(2^{(24 \times 6)}\) (yielding \(2^{144}\) possible states).
 \end{itemize}
 
 \newpage
 
 \section{Overview}
 
-The proposed encryption scheme is a block cipher that leverages the mathematical complexities and state space of Rubik's Cubes. Each block in the scheme utilizes a tuple of six 3x3x3 Rubik's Cubes, effectively rendering a block size of 144 bits (24 bits per cube; 6 cubes).
+The proposed encryption scheme is a block cipher\footnote{Encrypts chunks of plaintext data (blocks) using unique subkeys for each block.} that leverages the mathematical complexities and state space of Rubik's Cubes. Each block in the scheme utilizes a tuple of six 3x3x3 Rubik's Cubes, effectively rendering a block size of 144 bits (24 bits per cube; 6 cubes).
 
 \subsection{Initial Round}
 
@@ -194,37 +194,15 @@ At the start of the encryption process, each cube is initialized to the solved s
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{encryption/encryption.jpg}
+    \includegraphics[width=0.9\textwidth]{encryption/encryption.jpg}
     \caption{Rotacrypt Encryption Overview}
 \end{figure}
 
-The initial round begins by applying a cryptographically secure pseudorandom number generated Initialization Vector (IV) deserialized into six unique scrambles. Each cube in the tuple will have their own unique scramble at this stage, and a dynamic subkey is then generated from the original key using a secure key derivation function. The subkey is likewise deserialized into six unique scrambles. Each scramble is applied to their respective cube. The cubes finally undergo a series of deterministic Rubik's moves, mimicking the traditional S-box and diffusion operations in AES like SubBytes, ShiftRows, and MixColumns. These Rubik's moves are termed as SubCubes, ShiftFaces, and MixEdges respectively. It should be noted that the nature of layer operations intrinsically involves a form of diffusion, making the scheme's diffusion already naturally high without S-box operations. The resultant state of the cubes serves as the ciphertext for that block.
+The initial round begins by applying a cryptographically secure pseudorandom number generated Initialization Vector\footnote{An Initialization Vector is a cryptographically secure random number that is applied during initial encryption, ensuring distinct encrypted data every time (even with equivalent plaintext inputs). This technique disrupts pattern recognition attempts, particularly in chosen-plaintext attacks.} (IV) deserialized into six unique scrambles. Each cube in the tuple will have their own unique scramble at this stage, and a dynamic subkey\footnote{A subkey is a key derived from a master key for use in a particular cryptographic algorithm. In this scheme, subkeys are generated dynamically for each block} is then generated from the original key using a secure key derivation function. The subkey is likewise deserialized\footnote{Turning the cube's state into a simple format like a string or array for easier data handling.} into six unique scrambles. Each scramble is applied to their respective cube. The cubes finally undergo a series of deterministic Rubik's moves, mimicking the traditional S-box\footnote{A substition box (S-box) is a cryptographic component that performs fixed, non-linear substitutions on input bits to produce output bits.} and diffusion\footnote{Diffusion is a cryptographic concept that refers to the spreading of plaintext information throughout the ciphertext, making it difficult to decipher.} operations in AES like SubBytes, ShiftRows, and MixColumns. These Rubik's moves are termed as SubCubes, ShiftFaces, and MixEdges respectively. It should be noted that the nature of layer operations intrinsically involves a form of diffusion, making the scheme's diffusion already naturally high without S-box operations. The resultant state of the cubes serves as the ciphertext for that block.
 
-One may question the intent of an S-box operation if the layer operations already provide a high degree of diffusion. Layer operations are linear transformations (this becomes evident in \textit{3x3x3 Implementation}), and the S-box operation adds a layer of non-linearity to the encryption process. This non-linearity is critical to the security of the scheme, as it prevents the encryption process from being modeled as a linear system of equations. 
+One may question the intent of an S-box operation if the layer operations already provide a high degree of diffusion. Layer operations are linear transformation\footnote{Linear transformations are mathematical operations that preserve the structure of the underlying space, such as rotations and reflections.} (this becomes evident in \textit{3x3x3 Implementation}), and the S-box operation adds a layer of non-linearity to the encryption process. This non-linearity is critical to the security of the scheme, as it prevents the encryption process from being modeled as a linear system of equations. 
 
 \vspace{0.5cm}
-
-\textbf{\textit{Relevant Definitions}}:
-
-\begin{itemize}
-    \item \textbf{S-box}: A substition box is a cryptographic component that performs fixed, non-linear substitutions on input bits to produce output bits.
-    \item \textbf{Initialization Vector (IV)}: A cryptographically secure random number that is applied during initial encryption, ensuring distinct encrypted data every time (even with equivalent plaintext inputs). This technique disrupts pattern recognition attempts, particularly in chosen-plaintext attacks.
-    \item \textbf{Subkey}: A subkey is a key derived from a master key for use in a particular cryptographic algorithm. In this scheme, subkeys are generated dynamically for each block.
-    \item \textbf{Diffusion}: Diffusion is a cryptographic concept that refers to the spreading of plaintext information throughout the ciphertext, making it difficult to decipher.
-    \item \textbf{Linear Transformations}: Linear transformations are mathematical operations that preserve the structure of the underlying space, such as rotations and reflections.
-    \item \textbf{Block Cipher}: Encrypts chunks of plaintext data (blocks) using unique subkeys for each block.
-    \item \textbf{Chaining}: Linking the encryption of one block with the next, making the entire data set more secure and diffused by causing a ripple effect throughout the blocks.
-    \item \textbf{Serialization}: Turning the cube's state into a simple format like a string or array for easier data handling.
-    \item \textbf{Plaintext and Ciphertext}: In cryptography, plaintext refers to the original readable message, while ciphertext is the scrambled message produced through encryption.
-    \item \textbf{State Space}: The state space refers to the total number of possible configurations or states that a system can be in; for a cube, it's a very large number.
-    \item \textbf{Six Cube Tuple}: In this scheme, a tuple refers to an ordered set of six individual Rubik's Cubes, each contributing to the encryption process.
-    \item \textbf{Brute-force attacks}: In cryptography, a brute-force attack involves trying all possible combinations to decrypt a message, which is computationally expensive.
-    \item \textbf{Parallelization}: Parallelization refers to the process of dividing a task into sub-tasks that are solved concurrently, often used to speed up computational tasks.
-    \item \textbf{Cryptographic Security}: The term refers to the resilience of a cryptographic system against unauthorized access or data breaches.
-    \item \textbf{Mapping Constraints}: In this scheme, mapping constraints refer to the limitations in how data can be represented on the cube, such as not being able to interchange edges and corners.
-    \item \textbf{Geometric Constraints}: These are the limitations imposed by the physical structure of the Rubik's Cube, like the inability to change an edge piece into a corner piece.
-    \item \textbf{Cryptanalysis Attacks}: Cryptanalysis attacks involve mathematical and computational techniques to analyze and possibly break an encryption scheme.
-\end{itemize}
 
 \subsection{Subsequent Rounds}
 For subsequent rounds, a part of the cube state from the previous round is extracted and used as the IV for the next block. New subkeys are generated dynamically by hashing the original key along with a salt (detailed in the \textit{Key Generation / Sub-Key Generation} section), which is then converted into a Rubik's Cube scramble sequence. The same sequence of operations: SubCubes, ShiftFaces, and MixEdges, are then applied to these new blocks, followed by scrambling with the round-specific subkey.
