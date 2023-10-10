@@ -148,15 +148,16 @@ Furthermore, this means that any scramble can be reached with 20 moves or fewer.
 \subsection{Combinatorial Explosion with Multiple Cubes}
 Let us consider the number of possible states for a single 3x3x3 Rubik's Cube, which is \(43,252,003,274,489,856,000\). When chaining\footnote{Linking the encryption of one block with the next, making the entire data set more secure and diffused by causing a ripple effect throughout the blocks.} together the combinations of two different cubes, the number of combined states is \((43,252,003,274,489,856,000)^2\).
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{encryption/chain.jpg}
+\end{figure}
+
 This squaring occurs because each state of the first cube can pair with every state of the second cube, yielding \(43,252,003,274,489,856,000 \times 43,252,003,274,489,856,000\). Mathematically, the set of possible states becomes the Cartesian product of the two sets of states, leading to an exponential increase in complexity.
 
 One intriguing aspect of chaining multiple Rubik's Cubes is the exponential growth in the state space\footnote{The state space refers to the total number of possible configurations or states that a system can be in; for a cube, it's a very large number.}. Let \( N \) represent the number of unique states for a single Rubik's Cube. For \( k \) chained Rubik's Cubes, the total number of unique states becomes \( N^k \). This exponential increase serves a critical function: it substantially minimizes the likelihood of collisions whilst simultaneously increasing the difficulty of brute-force attacks.\footnote{In cryptography, a brute-force attack involves trying all possible combinations to decrypt a message, which is computationally expensive.}
 
 \subsection{Edge and Corner Constraints}
-
-While the utilization of multiple Rubik's Cubes in the encryption scheme introduces a combinatorial explosion in the state space, it is essential to consider the limitations imposed by the unique mapping of plaintext bits to cube pieces. Each plaintext bit (either a 0 or 1) is mapped to a specific piece on the cube, which can either be an edge or a corner.
-
-\vspace{0.5cm}
 
 \begin{figure}[h]
     \centering
@@ -182,7 +183,9 @@ While the utilization of multiple Rubik's Cubes in the encryption scheme introdu
     \caption{A visualization of categorical immutability. Corners will always map to corners.}
 \end{figure}
 
-One of the fundamental constraints\footnote{These are the limitations imposed by the physical structure of the Rubik's Cube, like the inability to change an edge piece into a corner piece.} of a Rubik's Cube is that edges and corners are immutable in their categories; edges cannot morph into corners and vice versa. Due to this constraint, it becomes inappropriate to assign all 48 movable units (54 total units minus 6 centers) to represent bits, as doing so would leave patterns in trivial plaintext-to-ciphertext cryptanalysis attacks.\footnote{Cryptanalysis attacks involve mathematical and computational techniques to analyze and possibly break an encryption scheme.} If a bit mapped to a corner unit can never be encrypted into an edge piece no matter how many layer operations occur, this serves as a trivial pattern in which cryptanalysists can exploit.
+One of the fundamental constraints of a Rubik's Cube is that edges and corners are immutable in their categories; edges cannot morph into corners and vice versa. Due to this constraint, it becomes inappropriate to assign all 48 movable units (54 total units minus 6 centers) to represent bits, as doing so would leave patterns in trivial plaintext-to-ciphertext cryptanalysis attacks.\footnote{Cryptanalysis attacks involve mathematical and computational techniques to analyze and possibly break an encryption scheme.} If a bit mapped to a corner unit can never be encrypted into an edge piece no matter how many layer operations occur, this serves as a trivial pattern in which cryptanalysists can exploit.
+
+While the utilization of multiple Rubik's Cubes in the encryption scheme introduces a combinatorial explosion in the state space, it is essential to consider the limitations imposed by the unique and contained mapping of plaintext bits to chosen cube pieces. Each plaintext bit (either a 0 or 1) is mapped to a specific piece on the cube, which can either be an edge or a corner for the entirety of the scheme.
 
 \subsection{Per-Cube 24-bit State Space}
 As a result of the aforementioned limitations, the encryption scheme opts for a more constrained assignment by sticking to either edges or corners to represent the bits. This decision narrows down the number of units used for bit representation to 24, thus limiting the state space to \(2^{24}\) for each cube.

@@ -949,6 +949,11 @@ INPUT moves/cubeLpUpRp.png
 INPUT ./moves/cubeLpUpRp.png
 INPUT ./moves/cubeLpUpRp.png
 INPUT /opt/local/share/texmf-texlive/fonts/tfm/jknappen/ec/tcrm1200.tfm
+INPUT ./encryption/chain.jpg
+INPUT ./encryption/chain.jpg
+INPUT encryption/chain.jpg
+INPUT ./encryption/chain.jpg
+INPUT ./encryption/chain.jpg
 INPUT ./cubies/cubies_1.png
 INPUT ./cubies/cubies_1.png
 INPUT cubies/cubies_1.png
