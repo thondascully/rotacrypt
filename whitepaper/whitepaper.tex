@@ -154,7 +154,33 @@ One intriguing aspect of chaining multiple Rubik's Cubes is the exponential grow
 
 \subsection{Edge and Corner Constraints}
 
-While the utilization of multiple Rubik's Cubes in the encryption scheme introduces a combinatorial explosion in the state space, it is essential to consider the limitations imposed by the unique mapping of plaintext bits to cube pieces. In this scheme, each plaintext bit (either a 0 or 1) is mapped to a specific piece on the cube, which can either be an edge or a corner.
+While the utilization of multiple Rubik's Cubes in the encryption scheme introduces a combinatorial explosion in the state space, it is essential to consider the limitations imposed by the unique mapping of plaintext bits to cube pieces. Each plaintext bit (either a 0 or 1) is mapped to a specific piece on the cube, which can either be an edge or a corner.
+
+\vspace{0.5cm}
+
+\begin{figure}[h]
+    \centering
+    \begin{minipage}[c]{0.2\textwidth}
+        \includegraphics[scale=0.1]{cubies/cubies_1.png}
+    \end{minipage}
+    \begin{minipage}[c]{0.2\textwidth}
+        \includegraphics[scale=0.1]{cubies/cubies_2.png}
+    \end{minipage}
+    \begin{minipage}[c]{0.05\textwidth}
+        \centering
+        \begin{tikzpicture}
+            \draw [->, ultra thick] (0,0.5)--(1,0.5);
+        \end{tikzpicture}
+    \end{minipage}
+    \hspace{0.5cm}
+    \begin{minipage}[c]{0.2\textwidth}
+        \includegraphics[scale=0.1]{cubies/cubies_3.png}
+    \end{minipage}
+    \begin{minipage}[c]{0.2\textwidth}
+        \includegraphics[scale=0.1]{cubies/cubies_4.png}
+    \end{minipage}
+    \caption{A visualization of categorical immutability. Corners will always map to corners.}
+\end{figure}
 
 One of the fundamental constraints\footnote{These are the limitations imposed by the physical structure of the Rubik's Cube, like the inability to change an edge piece into a corner piece.} of a Rubik's Cube is that edges and corners are immutable in their categories; edges cannot morph into corners and vice versa. Due to this constraint, it becomes inappropriate to assign all 48 movable units (54 total units minus 6 centers) to represent bits, as doing so would leave patterns in trivial plaintext-to-ciphertext cryptanalysis attacks.\footnote{Cryptanalysis attacks involve mathematical and computational techniques to analyze and possibly break an encryption scheme.} If a bit mapped to a corner unit can never be encrypted into an edge piece no matter how many layer operations occur, this serves as a trivial pattern in which cryptanalysists can exploit.
 

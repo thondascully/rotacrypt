@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1696941795 "/Users/thondascully/Projects/rotacrypt/whitepaper/whitepaper.tex" "whitepaper.pdf" "whitepaper" 1696941795 0
-  "/Users/thondascully/Projects/rotacrypt/whitepaper/whitepaper.tex" 1696941794 18401 eb19640ce0ba159fdf350239006f37df ""
+["pdflatex"] 1696950585 "/Users/thondascully/Projects/rotacrypt/whitepaper/whitepaper.tex" "whitepaper.pdf" "whitepaper" 1696950586 0
+  "/Users/thondascully/Projects/rotacrypt/whitepaper/whitepaper.tex" 1696950585 19208 84953ae3b1ebe8693a44f4eacfa35d32 ""
   "/opt/local/etc/texmf/texmf.cnf" 1678889952 38222 86600ffd55a0fce672e31a15d690ee55 ""
   "/opt/local/share/texmf-texlive/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1556757304 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/opt/local/share/texmf-texlive/fonts/map/fontname/texfonts.map" 1583632499 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -172,6 +172,10 @@
   "/opt/local/var/db/texmf/fonts/map/pdftex/updmap/pdftex.map" 1678892756 4275926 4476c38317df35dc39093039dcdf07ce ""
   "/opt/local/var/db/texmf/web2c/pdftex/pdflatex.fmt" 1678892821 2617889 79a8b731dafa714710efb4551c195955 ""
   "cube.png" 1696436380 7873 568f45853c629c1a088be32fd6392674 ""
+  "cubies/cubies_1.png" 1696950151 7879 26bd352f51ec1cdefb768f039d219437 ""
+  "cubies/cubies_2.png" 1696950151 23557 6dfd77e41ddda8df45e46a4db465f6e5 ""
+  "cubies/cubies_3.png" 1696950151 7899 dba030121e4ae5ed451be848ebb40758 ""
+  "cubies/cubies_4.png" 1696950151 24027 d463df83f71d2f1efea74bcf34cb912c ""
   "encryption/encryption.jpg" 1696859521 514693 9b5a891b8ba3eaf05a329e26f026c27c ""
   "key_gen/keygen.jpg" 1696526002 298987 3fd62d6bcef4ed30024004c0997488cf ""
   "moves/core.png" 1696436319 23424 1aeb9e0737622d547f949d14f86250dd ""
@@ -181,10 +185,10 @@
   "moves/cubeLpUp.png" 1696516027 7917 4f4db1fa84a51ecdb8316691e915f323 ""
   "moves/cubeLpUpRp.png" 1696516027 8064 5f447ac5a87cbeb865c0c7183634b59a ""
   "moves/cube_r.png" 1696470457 8053 cda3b1e723255b6a0b88f96a08197009 ""
-  "whitepaper.aux" 1696941795 5345 2d5e888fe5a0e7d12f335901db891660 "pdflatex"
-  "whitepaper.out" 1696941795 4976 e40a38cdc2d6bf33a66ec04d1ddeaae5 "pdflatex"
-  "whitepaper.tex" 1696941794 18401 eb19640ce0ba159fdf350239006f37df ""
-  "whitepaper.toc" 1696941795 2665 a1324efa55fa2b126362530f8fe03f5e "pdflatex"
+  "whitepaper.aux" 1696950586 5559 69a0faf9d697d86639a150debb06900a "pdflatex"
+  "whitepaper.out" 1696950586 4976 e40a38cdc2d6bf33a66ec04d1ddeaae5 "pdflatex"
+  "whitepaper.tex" 1696950585 19208 84953ae3b1ebe8693a44f4eacfa35d32 ""
+  "whitepaper.toc" 1696950586 2672 ddcd80f9bc140174166d38fa24f64683 "pdflatex"
   (generated)
   "whitepaper.aux"
   "whitepaper.log"
