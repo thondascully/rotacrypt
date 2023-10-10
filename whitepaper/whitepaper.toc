@@ -5,7 +5,7 @@
 \contentsline {subsection}{\numberline {1.4}Combinatorial Explosion with Multiple Cubes}{5}{subsection.1.4}%
 \contentsline {subsection}{\numberline {1.5}Edge and Corner Constraints}{5}{subsection.1.5}%
 \contentsline {subsection}{\numberline {1.6}Per-Cube 24-bit State Space}{6}{subsection.1.6}%
-\contentsline {subsection}{\numberline {1.7}Summary}{6}{subsection.1.7}%
+\contentsline {subsection}{\numberline {1.7}Summary}{7}{subsection.1.7}%
 \contentsline {section}{\numberline {2}Overview}{8}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Initial Round}{8}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Subsequent Rounds}{9}{subsection.2.2}%

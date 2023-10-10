@@ -974,6 +974,11 @@ INPUT ./cubies/cubies_4.png
 INPUT cubies/cubies_4.png
 INPUT ./cubies/cubies_4.png
 INPUT ./cubies/cubies_4.png
+INPUT ./encryption/bitted-transform.jpg
+INPUT ./encryption/bitted-transform.jpg
+INPUT encryption/bitted-transform.jpg
+INPUT ./encryption/bitted-transform.jpg
+INPUT ./encryption/bitted-transform.jpg
 INPUT ./encryption/encryption.jpg
 INPUT ./encryption/encryption.jpg
 INPUT encryption/encryption.jpg

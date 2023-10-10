@@ -146,7 +146,8 @@ In the realm of 3x3x3 Rubik's Cubes, \textit{God's Number} is a term used to den
 Furthermore, this means that any scramble can be reached with 20 moves or fewer. This is a key point to keep in mind when considering the security of the cube as a cryptographic primitive as well as for key size considerations.\\
 
 \subsection{Combinatorial Explosion with Multiple Cubes}
-Let us consider the number of possible states for a single 3x3x3 Rubik's Cube, which is \(43,252,003,274,489,856,000\). When chaining\footnote{Linking the encryption of one block with the next, making the entire data set more secure and diffused by causing a ripple effect throughout the blocks.} together the combinations of two different cubes, the number of combined states is \((43,252,003,274,489,856,000)^2\).
+
+Let us consider the number of possible states for a single 3x3x3 Rubik's Cube, which is \(43,252,003,274,489,856,000\). This is not large enough for a secure cryptographic state space. However, when chaining\footnote{Linking the encryption of one block with the next, making the entire data set more secure and diffused by causing a ripple effect throughout the blocks.} together the combinations of two different cubes, the number of combined states is \((43,252,003,274,489,856,000)^2\).
 
 \begin{figure}[H]
     \centering
@@ -155,7 +156,7 @@ Let us consider the number of possible states for a single 3x3x3 Rubik's Cube, w
 
 This squaring occurs because each state of the first cube can pair with every state of the second cube, yielding \(43,252,003,274,489,856,000 \times 43,252,003,274,489,856,000\). Mathematically, the set of possible states becomes the Cartesian product of the two sets of states, leading to an exponential increase in complexity.
 
-One intriguing aspect of chaining multiple Rubik's Cubes is the exponential growth in the state space\footnote{The state space refers to the total number of possible configurations or states that a system can be in; for a cube, it's a very large number.}. Let \( N \) represent the number of unique states for a single Rubik's Cube. For \( k \) chained Rubik's Cubes, the total number of unique states becomes \( N^k \). This exponential increase serves a critical function: it substantially minimizes the likelihood of collisions whilst simultaneously increasing the difficulty of brute-force attacks.\footnote{In cryptography, a brute-force attack involves trying all possible combinations to decrypt a message, which is computationally expensive.}
+The intriguing aspect of chaining multiple Rubik's Cubes is the notable exponential growth in the state space\footnote{The state space refers to the total number of possible configurations or states that a system can be in; for a cube, it's a very large number.}. Let \( N \) represent the number of unique states for a single Rubik's Cube. For \( k \) chained Rubik's Cubes, the total number of unique states becomes \( N^k \). This exponential increase serves a critical function: it substantially minimizes the likelihood of collisions whilst simultaneously increasing the difficulty of brute-force attacks.\footnote{In cryptography, a brute-force attack involves trying all possible combinations to decrypt a message, which is computationally expensive.}
 
 \subsection{Edge and Corner Constraints}
 
@@ -189,6 +190,15 @@ While the utilization of multiple Rubik's Cubes in the encryption scheme introdu
 
 \subsection{Per-Cube 24-bit State Space}
 As a result of the aforementioned limitations, the encryption scheme opts for a more constrained assignment by sticking to either edges or corners to represent the bits. This decision narrows down the number of units used for bit representation to 24, thus limiting the state space to \(2^{24}\) for each cube.
+
+\vspace{0.5cm}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{encryption/bitted-transform.jpg}
+\end{figure}
+
+\textit{A serialized 24-bit bitstring yields a state space of \(2^{24}\) because there are \(2^{24}\) different ways to pick and choose 0s and 1s across 24 elements. For the first bit, there are 2 possible choices for the value. For each of those choices, the second bit can also have 2 possible values. This pattern continues for all 24 bits, leading to \(2 \times 2 \times 2 \times \ldots\) (24 times) \(\rightarrow 2^{24}\).}
 
 Given the inherent limitations in the state space of a single Rubik's Cube, capped at \(2^{24}\) due to geometric constraints, a novel approach to enlarging this space involves chaining multiple cubes together. Specifically, by employing a tuple of six Rubik's Cubes\footnote{In this scheme, a tuple refers to an ordered set of six individual Rubik's Cubes, each contributing to the encryption process.} for each block, the scheme effectively increases the state space to \(2^{(24 \times 6)}\).
 
