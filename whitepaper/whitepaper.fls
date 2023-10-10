@@ -954,6 +954,7 @@ INPUT ./encryption/encryption.jpg
 INPUT encryption/encryption.jpg
 INPUT ./encryption/encryption.jpg
 INPUT ./encryption/encryption.jpg
+INPUT /opt/local/share/texmf-texlive/fonts/tfm/public/cm/cmbxti10.tfm
 INPUT ./key_gen/keygen.jpg
 INPUT ./key_gen/keygen.jpg
 INPUT key_gen/keygen.jpg
@@ -965,6 +966,7 @@ INPUT ./whitepaper.out
 INPUT /opt/local/share/texmf-texlive/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT /opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+INPUT /opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbxti10.pfb
 INPUT /opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi12.pfb
 INPUT /opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT /opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb
