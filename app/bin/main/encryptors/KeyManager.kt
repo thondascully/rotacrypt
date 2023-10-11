@@ -26,7 +26,7 @@ fun KeyInitContainer.forEachCubeIndexed(func: (Cube, Int) -> Unit) {
 }
 
 class KeyManager {
-    protected val generator = Generator()
+    protected val generator = KeyGenerator()
     protected val cubes = KeyInitContainer(Cube(), Cube(), Cube(), Cube())
     protected val sequences = Array(4) { Array(4) { 0L } } // An array of 4 sequences, each can hold 64 moves
     var key = ""

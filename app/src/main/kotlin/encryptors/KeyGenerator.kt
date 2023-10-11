@@ -7,7 +7,7 @@ package encryptors
 import encryptors.cube.*
 import java.security.MessageDigest
 
-class Generator {
+class KeyGenerator {
     private val orderedFace = arrayOf(6, 7, 8, 5, 4, 3, 0, 1, 2)
     private val orderedCorners = arrayOf(0, 2, 8, 6)
 

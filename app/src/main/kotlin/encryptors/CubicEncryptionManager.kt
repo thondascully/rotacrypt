@@ -8,9 +8,9 @@ import encryptors.cube.*
 import java.security.SecureRandom
 import java.security.MessageDigest
 
-class CubicEncryptionManager(val cube: Cube, val keyManager: KeyManager) : Encryptor() {
+class CubicEncryptionManager(val keyManager: KeyManager) : Encryptor() {
     init {
-
+        
     }
 
     override fun encrypt(data: ByteArray): ByteArray {

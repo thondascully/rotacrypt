@@ -12,11 +12,8 @@ import key.*
 import ops.*
 
 fun main() = runBlocking {
-
-    //val keyGenerator = ECCHybridGen()
-    //val keyPair = keyGenerator.generateKeyPair()
-    //val twofishEncryptor = TwofishBase(keyPair.private.encoded)
-    //val fileOperator = Operator()
+    val keyManager = KeyManager()
+    val rubiksEncryptor = CubicEncryptionManager(keyManager)
     
     //val manager = EncryptionManager(twofishEncryptor, fileOperator)
     
@@ -116,9 +113,7 @@ fun main() = runBlocking {
 
     */
 
-    val keyManager = KeyManager()
-    //val rubiksEncryptor = CubicEncryptionManager()
-    
+
     //val plaintext = "Hello".toByteArray()
     //val ciphertext = rubiksEncryptor.encrypt(plaintext)
     //println(ciphertext)
