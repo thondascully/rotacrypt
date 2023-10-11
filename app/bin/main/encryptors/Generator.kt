@@ -12,26 +12,22 @@ class Generator {
     private val orderedCorners = arrayOf(0, 2, 8, 6)
 
     fun generateKey(cubes: KeyInitContainer, sequences: Array<Array<Long>>): String {
-        val faces = List(4) { mutableListOf<List<List<Char>>>() }
-        val corners = List(4) { mutableListOf<List<List<Char>>>() }
+        val faces: MutableList<List<List<Char>>> = MutableList(4) { mutableListOf() }
+        val corners: MutableList<List<List<Char>>> = MutableList(4) { mutableListOf() }
         
         cubes.forEachCubeIndexed { cube, idx ->
-            faces[idx].add(serializeFaces(cube))
-            corners[idx].add(serializeCorners(cube))
+            faces[idx] = serializeFaces(cube).toMutableList()
+            corners[idx] = serializeCorners(cube).toMutableList()
         }
 
-        val moves = Array(4) { mutableListOf<Moves>() } 
-        sequences.forEachIndexed { idx, sequence ->
-            val move = KeyManager.retrieve(sequence, idx) 
-            moves[idx].add(move)
+        val moves = Array(4) { listOf<Moves>() } 
+        for (i in 0 until 4) {
+            val moves_ = List(64) { j -> KeyManager.retrieve(sequences[i], j) }
+            moves[i] = moves_
         }
 
-        println(moves)
-
-        val countU = moves.map { it.count { it == Moves.U } }
-        val countF = moves.map { it.count { it == Moves.F } }
-
-        println(countU)
+        val countU = moves.map { it.count { move -> move == Moves.U || move == Moves.Up } }
+        val countF = moves.map { it.count { move -> move == Moves.F || move == Moves.Fp } }
 
         val serializedPartial = corners[0][countU[0] % 6] + corners[1][countU[0] % 6] + 
             faces[0][countU[0] % 6] + faces[1][countU[1] % 6] + faces[2][countU[2] % 6] + 
@@ -42,9 +38,8 @@ class Generator {
             faces[2][(countU[2] + 1) % 6] + faces[3][(countU[3] + 1) % 6] + 
             corners[2][(countU[2] + 1) % 6] + corners[3][(countU[3] + 1) % 6]
 
-        //val conv = serializedFinal.map { colorToFace[it] ?: it }.joinToString("")
-        println(serializedFinal.toString())
-        return serializedFinal.toString()
+        val serializedMoves = serializedFinal.map { colorToFace[it] ?: it }
+        return serializedMoves.toString()
     }
 
     private fun extract(cube: Cube, order: Array<Int>): List<Char> {
