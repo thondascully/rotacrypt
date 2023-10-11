@@ -933,6 +933,7 @@ INPUT ./moves/core.png
 INPUT moves/core.png
 INPUT ./moves/core.png
 INPUT ./moves/core.png
+INPUT /opt/local/share/texmf-texlive/fonts/tfm/jknappen/ec/tcrm1200.tfm
 INPUT ./moves/cubeLp.png
 INPUT ./moves/cubeLp.png
 INPUT moves/cubeLp.png
@@ -948,7 +949,6 @@ INPUT ./moves/cubeLpUpRp.png
 INPUT moves/cubeLpUpRp.png
 INPUT ./moves/cubeLpUpRp.png
 INPUT ./moves/cubeLpUpRp.png
-INPUT /opt/local/share/texmf-texlive/fonts/tfm/jknappen/ec/tcrm1200.tfm
 INPUT ./encryption/chain.jpg
 INPUT ./encryption/chain.jpg
 INPUT encryption/chain.jpg

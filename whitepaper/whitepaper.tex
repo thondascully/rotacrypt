@@ -90,6 +90,29 @@ Let's dive into the mechanics of the 3x3x3 puzzle. The cube boasts centers, edge
 
 For instance, if the cube is held with a yellow top and blue front, the red and orange faces will invariably be to the right and left, respectively. In fact, the red and orange center pieces will \textit{always} be opposites, as will the blue-green and white-yellow pairs of center pieces.\\
 
+\subsection{Notation for Cube Operations}
+
+The notation used to describe the movements and algorithms for solving the Rubik's Cube is standardized to facilitate easy understanding and sharing of solutions. Each face of the cube is designated by an uppercase letter:
+
+\begin{itemize}
+    \item \textbf{U} - Up (Top Layer)
+    \item \textbf{D} - Down (Bottom Layer)
+    \item \textbf{L} - Left (Left Layer)
+    \item \textbf{R} - Right (Right Layer)
+    \item \textbf{F} - Front (Front Layer)
+    \item \textbf{B} - Back (Back Layer)
+\end{itemize}
+
+The following symbols are appended to these letters to indicate the direction of rotation:
+
+\begin{itemize}
+    \item No symbol - 90-degree clockwise rotation
+    \item \textbf{'} (apostrophe) - 90-degree counterclockwise rotation
+    \item \textbf{2} - 180-degree rotation (either direction)
+\end{itemize}
+
+\vspace{0.5cm}
+
 \begin{figure}[h]
     \centering
     \begin{minipage}[c]{0.2\textwidth}
@@ -117,27 +140,6 @@ For instance, if the cube is held with a yellow top and blue front, the red and 
     \end{minipage}
     \caption{A visualization of the \textit{L' U' R'} operation(s).}
 \end{figure}
-
-\subsection{Notation for Cube Operations}
-
-The notation used to describe the movements and algorithms for solving the Rubik's Cube is standardized to facilitate easy understanding and sharing of solutions. Each face of the cube is designated by an uppercase letter:
-
-\begin{itemize}
-    \item \textbf{U} - Up (Top Layer)
-    \item \textbf{D} - Down (Bottom Layer)
-    \item \textbf{L} - Left (Left Layer)
-    \item \textbf{R} - Right (Right Layer)
-    \item \textbf{F} - Front (Front Layer)
-    \item \textbf{B} - Back (Back Layer)
-\end{itemize}
-
-The following symbols are appended to these letters to indicate the direction of rotation:
-
-\begin{itemize}
-    \item No symbol - 90-degree clockwise rotation
-    \item \textbf{'} (apostrophe) - 90-degree counterclockwise rotation
-    \item \textbf{2} - 180-degree rotation (either direction)
-\end{itemize}
 
 For example, the sequence \textit{L' U' R'} would indicate a counterclockwise rotation of the left layer, followed by a counterclockwise rotation of the top layer, and finally, a counterclockwise rotation of the right layer.
 
