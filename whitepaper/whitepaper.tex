@@ -21,6 +21,7 @@
     urlcolor=black
 }
 \usepackage[left=1in,right=1in,top=1in,bottom=1in]{geometry}
+\captionsetup{justification=centering}
 
 \title{Rotacrypt: Rotational Mechanics as a Cryptographic Primitive}
 \author{Teo Honda Scully}
@@ -196,6 +197,7 @@ As a result of the aforementioned limitations, the encryption scheme opts for a 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.9\textwidth]{encryption/bitted-transform.jpg}
+    \caption{The serialization of a plaintext-mapped cube state. Black units represent 1s, while white units represent 0s.}
 \end{figure}
 
 \textit{A serialized 24-bit bitstring yields a state space of \(2^{24}\) because there are \(2^{24}\) different ways to pick and choose 0s and 1s across 24 elements. For the first bit, there are 2 possible choices for the value. For each of those choices, the second bit can also have 2 possible values. This pattern continues for all 24 bits, leading to \(2 \times 2 \times 2 \times \ldots\) (24 times) \(\rightarrow 2^{24}\).}
