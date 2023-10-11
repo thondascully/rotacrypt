@@ -116,13 +116,11 @@ fun main() = runBlocking {
 
     */
 
-    //val rubiksEncryptor = CubeEncryptor()
+    val keyManager = KeyManager()
+    //val rubiksEncryptor = CubicEncryptionManager()
     
     //val plaintext = "Hello".toByteArray()
     //val ciphertext = rubiksEncryptor.encrypt(plaintext)
     //println(ciphertext)
 
-    val cube = Cube()
-    cube.algorithm("R U R' U'")
-    println(cube)
 }

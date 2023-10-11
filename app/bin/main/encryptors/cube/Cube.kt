@@ -7,6 +7,7 @@ package encryptors.cube
 import kotlin.math.floor
 import kotlin.random.Random
 import encryptors.cube.*
+import encryptors.*
 
 class Cube {
     private val cube = Array(54) { Identifier.UNDEF }
@@ -45,7 +46,7 @@ class Cube {
     public fun algorithm(moves: List<Moves>) {
         moves.forEach { move ->
             val counterclockwise = move.name.endsWith('p')
-            val face = faceMap[move.name.filter { it.isLetter() }] ?: error("Invalid move: $move")
+            val face = faceMap[move.name.filter { it.isLetter() }.removeSuffix("p")] ?: error("Invalid move: $move")
             transform(face, counterclockwise)
         }
     }
