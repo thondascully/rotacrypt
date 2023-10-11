@@ -42,11 +42,10 @@ class Cube {
         }
     }
 
-    public fun algorithm(raw_moves: String) {
-        raw_moves.split(" ").forEach { move ->
-            val counterclockwise = "'" in move
-            val move = move.filter { it.isLetter() }
-            val face = faceMap[move] ?: error("Invalid move: $move")
+    public fun algorithm(moves: List<Moves>) {
+        moves.forEach { move ->
+            val counterclockwise = move.name.endsWith('p')
+            val face = faceMap[move.name.filter { it.isLetter() }] ?: error("Invalid move: $move")
             transform(face, counterclockwise)
         }
     }
