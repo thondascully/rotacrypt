@@ -11,7 +11,7 @@ class KeyGenerator {
     private val orderedFace = arrayOf(6, 7, 8, 5, 4, 3, 0, 1, 2)
     private val orderedCorners = arrayOf(0, 2, 8, 6)
 
-    fun generateKey(cubes: KeyInitContainer, sequences: Array<Array<Long>>): String {
+    fun generateKey(cubes: KeyInitContainer, sequences: Array<Array<Long>>): List<Char> {
         val faces: MutableList<List<List<Char>>> = MutableList(4) { mutableListOf() }
         val corners: MutableList<List<List<Char>>> = MutableList(4) { mutableListOf() }
         
@@ -39,7 +39,7 @@ class KeyGenerator {
             corners[2][(countU[2] + 1) % 6] + corners[3][(countU[3] + 1) % 6]
 
         val serializedMoves = serializedFinal.map { colorToFace[it] ?: it }
-        return serializedMoves.toString()
+        return serializedMoves
     }
 
     private fun extract(cube: Cube, order: Array<Int>): List<Char> {

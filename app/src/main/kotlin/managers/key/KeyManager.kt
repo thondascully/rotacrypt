@@ -28,8 +28,8 @@ fun KeyInitContainer.forEachCubeIndexed(func: (Cube, Int) -> Unit) {
 class KeyManager {
     protected val generator = KeyGenerator()
     protected val cubes = KeyInitContainer(Cube(), Cube(), Cube(), Cube())
-    protected val sequences = Array(4) { Array(4) { 0L } } // An array of 4 sequences, each can hold 64 moves
-    var key = ""
+    protected val sequences = Array(4) { Array(4) { 0L } } // An array of 4 sequences; each can hold 64 moves
+    protected var key = listOf<Char>()
     
     init {
         val secureRandom = SecureRandom()
@@ -61,12 +61,12 @@ class KeyManager {
         }
     }
     
-    fun generateSubKey(): String {
+    fun generateSubKey(): List<Char> {
         // Generate subkeys based on main key and salt
         return ""
     }
 
-    fun splitSubKey(subKey: String): List<String> {
+    fun splitSubKey(subKey: String): List<List<Char>> {
         // Split subkey into required chunks
         return listOf("")
     }

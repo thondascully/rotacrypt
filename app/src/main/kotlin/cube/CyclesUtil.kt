@@ -147,12 +147,12 @@ val faceToCyclesMap: Map<Face, List<List<Int>>> = mapOf(
 )
 
 val faceMap = mapOf(
-    "U" to Face.UP,
-    "F" to Face.FRONT,
-    "R" to Face.RIGHT,
-    "B" to Face.BACK,
-    "L" to Face.LEFT,
-    "D" to Face.DOWN
+    'U' to Face.UP,
+    'F' to Face.FRONT,
+    'R' to Face.RIGHT,
+    'B' to Face.BACK,
+    'L' to Face.LEFT,
+    'D' to Face.DOWN
 )
 
 /*
