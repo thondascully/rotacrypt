@@ -51,9 +51,14 @@ Rotacrypt uses Rubik's Cube mechanics to construct a mathematically intricate an
 
 This paper first introduces Rotacrypt, a nearly flawless cryptosystem, and then proceeds to break it due to a singular flaw in the scheme's cryptographic primitive.
 
-\section{Introduction}
+\subsection{Purpose}
+There is no purpose. I was advised not to create a cryptosystem, so I did the opposite. As it turns out, the other person was right—so I will be the one to break my own scheme.
 
-Ah, the Rubik's Cube—the iconic toy that bedevils and delights in equal measure. Born from the ingenious mind of Ernő Rubik in 1974, it's more than just a puzzle. Forget mere child's play; this cube is chaos in the physical. Just kidding. To go from the state of chaos to order, one only needs to know a solving protocol of which many exist.
+\newpage
+
+\section{The Rubik's Cube}
+
+The Rubik's Cube, created by Ernő Rubik in 1974, is more than a mind-bending puzzle; it serves as a direct application of group theory principles. Its intricate configurations provide a robust framework for in-depth studies in both cryptography and algorithm design.
 
 \subsection{Review of Rubik's Cubes}
 
@@ -268,9 +273,6 @@ We are chaining blocks to increase diffusion. A blockchain if you must.
 \subsection{Final Round}
 
 (MAYBE... TBD) In the final round, the processed cubes go through an S-box transformation to further improve the security of the encrypted data. This S-box is carefully designed to maximize non-linearity and is dynamically generated based on the cube's final state.
-
-\subsection{Purpose}
-There is no purpose. I was told not to make a cryptosystem, so I did the opposite.
 
 \subsection{Intended Usage}
 <...>
