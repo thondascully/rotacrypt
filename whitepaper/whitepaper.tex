@@ -11,6 +11,7 @@
 \usepackage{tikz}
 \usepackage{listings}
 \usepackage{color}
+\usepackage{enumitem}
 \usepackage{parskip}
 \usepackage{hyperref}
 \hypersetup{
@@ -22,6 +23,8 @@
 }
 \usepackage[left=1in,right=1in,top=1in,bottom=1in]{geometry}
 \captionsetup{justification=centering}
+\newlist{verbenumerate}{enumerate}{1}
+\setlist[verbenumerate,1]{label=\texttt{\arabic*}}
 
 \title{Breaking Rotacrypt: Cryptanalysis Breakdown of Rotational Mechanics as a Cryptographic Primitive}
 \author{Teo Honda Scully}
@@ -50,6 +53,23 @@ In the ever-evolving landscape of encryption, innovative approaches continue to 
 Rotacrypt uses Rubik's Cube mechanics to construct a mathematically intricate and seemingly secure encryption scheme. Despite its promise, the system contains an inherent flaw related to the cube's cyclic rotational limitations. The latter part of this paper will perform a cryptanalysis of this flaw, showing its capacity to compromise Rotacrypt's security.
 
 This paper first introduces Rotacrypt, a nearly flawless cryptosystem, and then proceeds to break it due to a singular flaw in the scheme's cryptographic primitive.
+
+\subsubsection{Rotacrypt Outline}
+
+In Section 2, I start by providing a brief overview of the cube's mechanics. I state the goals of my approach, the avenues that I've chosen, and limitations that arise. The following logical workflow is used in Section 2:
+
+\begin{verbenumerate}
+    \item \texttt{Physical breakdown of the cube and its core mechanics}
+    \item \texttt{Review of the notation used to describe the cube's movements}
+    \item \texttt{Discussion of the cube's state space and the combinatorial explosion that occurs when multiple cubes are chained together}
+    \item \texttt{Review of the constraints imposed by the cube's rotational mechanics and the new resulting state space}
+    \item \texttt{Explanation of the scheme's overall goal and primary avenue of approach}
+    \item \texttt{Summary of the key points of the section}
+\end{verbenumerate}
+
+Before jumping into the technicalities of the scheme, I provide a brief high-level diagram overview in Section 3 accompanied by explanatory text. In Section 4, I detail the programmed implementation of the \textit{3x3x3} cube and its associated data structure with an emphasis on its linearity. This includes subsections on the augmented \textit{SPEFFZ} map transformations and the cyclic transformations. 
+
+In Section 5, I discuss the deserialization algorithm(s) and the overall key generation protocol for primary-key and sub-key generation. In Section 6, I finally dive into the encryption process. To understand Section 6 fully, it is recommend to read through all previous sections, but it is not required. The sections build on each other, but are designed to be understandable in isolation. In Section 7, I discuss the complementing decryption process. In Section 8, ...
 
 \subsection{Purpose}
 There is no purpose. I was advised not to create a cryptosystem, so I did the opposite. As it turns out, the other person was right—so I will be the one to break my own scheme.

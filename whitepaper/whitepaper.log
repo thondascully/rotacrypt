@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/MacPorts 2022.62882_2) (preloaded format=pdflatex 2023.3.15)  15 OCT 2023 21:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/MacPorts 2022.62882_2) (preloaded format=pdflatex 2023.3.15)  16 OCT 2023 00:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -454,75 +454,86 @@ File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
- (/opt/local/share/texmf-texlive/tex/latex/parskip/parskip.sty
+ (/opt/local/share/texmf-texlive/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip53
+\enit@outerparindent=\dimen272
+\enit@toks=\toks39
+\enit@inbox=\box67
+\enit@count@id=\count315
+\enitdp@description=\count316
+) (/opt/local/share/texmf-texlive/tex/latex/parskip/parskip.sty
 Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
  (/opt/local/share/texmf-texlive/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count315
+\etb@tempcnta=\count317
 ))
-Package hyperref Info: Option `colorlinks' set `true' on input line 22.
+Package hyperref Info: Option `colorlinks' set `true' on input line 23.
  (/opt/local/share/texmf-texlive/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
  (/opt/local/share/texmf-texlive/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count316
-\Gm@cntv=\count317
-\c@Gm@tempcnt=\count318
-\Gm@bindingoffset=\dimen272
-\Gm@wd@mp=\dimen273
-\Gm@odd@mp=\dimen274
-\Gm@even@mp=\dimen275
-\Gm@layoutwidth=\dimen276
-\Gm@layoutheight=\dimen277
-\Gm@layouthoffset=\dimen278
-\Gm@layoutvoffset=\dimen279
-\Gm@dimlist=\toks39
-) (/opt/local/share/texmf-texlive/tex/latex/l3backend/l3backend-pdftex.def
+\Gm@cnth=\count318
+\Gm@cntv=\count319
+\c@Gm@tempcnt=\count320
+\Gm@bindingoffset=\dimen273
+\Gm@wd@mp=\dimen274
+\Gm@odd@mp=\dimen275
+\Gm@even@mp=\dimen276
+\Gm@layoutwidth=\dimen277
+\Gm@layoutheight=\dimen278
+\Gm@layouthoffset=\dimen279
+\Gm@layoutvoffset=\dimen280
+\Gm@dimlist=\toks40
+)
+\c@verbenumeratei=\count321
+\enitdp@verbenumerate=\count322
+ (/opt/local/share/texmf-texlive/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count319
-\l__pdf_internal_box=\box67
+\l__color_backend_stack_int=\count323
+\l__pdf_internal_box=\box68
 ) (./whitepaper.aux)
 \openout1 = `whitepaper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
  (/opt/local/share/texmf-texlive/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count320
-\scratchdimen=\dimen280
-\scratchbox=\box68
-\nofMPsegments=\count321
-\nofMParguments=\count322
-\everyMPshowfont=\toks40
-\MPscratchCnt=\count323
-\MPscratchDim=\dimen281
-\MPnumerator=\count324
-\makeMPintoPDFobject=\count325
-\everyMPtoPDFconversion=\toks41
+\scratchcounter=\count324
+\scratchdimen=\dimen281
+\scratchbox=\box69
+\nofMPsegments=\count325
+\nofMParguments=\count326
+\everyMPshowfont=\toks41
+\MPscratchCnt=\count327
+\MPscratchDim=\dimen282
+\MPnumerator=\count328
+\makeMPintoPDFobject=\count329
+\everyMPtoPDFconversion=\toks42
 ) (/opt/local/share/texmf-texlive/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/opt/local/share/texmf-texlive/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring ON on input line 30.
+Package hyperref Info: Link coloring ON on input line 33.
  (/opt/local/share/texmf-texlive/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/opt/local/share/texmf-texlive/tex/latex/refcount/refcount.sty
@@ -530,11 +541,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/opt/local/share/texmf-texlive/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count326
+\c@section@level=\count330
 )
-LaTeX Info: Redefining \ref on input line 30.
-LaTeX Info: Redefining \pageref on input line 30.
-LaTeX Info: Redefining \nameref on input line 30.
+LaTeX Info: Redefining \ref on input line 33.
+LaTeX Info: Redefining \pageref on input line 33.
+LaTeX Info: Redefining \nameref on input line 33.
  (./whitepaper.out) (./whitepaper.out)
 \@outlinefile=\write4
 \openout4 = `whitepaper.out'.
@@ -543,7 +554,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count327
+\c@lstlisting=\count331
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -579,11 +590,11 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 33.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 36.
 (/opt/local/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 33.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 36.
  (/opt/local/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (./whitepaper.toc [1
@@ -592,139 +603,149 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \tf@toc=\write5
 \openout5 = `whitepaper.toc'.
 
- [2] [3]
-<cube.png, id=199, 809.0225pt x 806.01125pt>
+ [2]
+Overfull \hbox (10.3949pt too wide) in paragraph at lines 64--65
+[]\OT1/cmtt/m/n/12 Discussion of the cube's state space and the combinatorial explosion that
+ []
+
+
+Overfull \hbox (4.2199pt too wide) in paragraph at lines 65--66
+[]\OT1/cmtt/m/n/12 Review of the constraints imposed by the cube's rotational mechanics and
+ []
+
+[3] [4]
+<cube.png, id=216, 809.0225pt x 806.01125pt>
 File: cube.png Graphic file (type png)
 <use cube.png>
-Package pdftex.def Info: cube.png  used on input line 69.
+Package pdftex.def Info: cube.png  used on input line 89.
 (pdftex.def)             Requested size: 80.90698pt x 80.60583pt.
-<moves/core_r_highlight.png, id=201, 808.01875pt x 806.01125pt>
+<moves/core_r_highlight.png, id=218, 808.01875pt x 806.01125pt>
 File: moves/core_r_highlight.png Graphic file (type png)
 <use moves/core_r_highlight.png>
-Package pdftex.def Info: moves/core_r_highlight.png  used on input line 72.
+Package pdftex.def Info: moves/core_r_highlight.png  used on input line 92.
 (pdftex.def)             Requested size: 80.80661pt x 80.60583pt.
 
-Overfull \hbox (6.56357pt too wide) in paragraph at lines 78--79
+Overfull \hbox (6.56357pt too wide) in paragraph at lines 98--99
  [][] 
  []
 
-<moves/cube_r.png, id=202, 808.01875pt x 806.01125pt>
+<moves/cube_r.png, id=219, 808.01875pt x 806.01125pt>
 File: moves/cube_r.png Graphic file (type png)
 <use moves/cube_r.png>
-Package pdftex.def Info: moves/cube_r.png  used on input line 82.
+Package pdftex.def Info: moves/cube_r.png  used on input line 102.
 (pdftex.def)             Requested size: 80.80661pt x 80.60583pt.
-<moves/core_r_transform.png, id=203, 808.01875pt x 806.01125pt>
+<moves/core_r_transform.png, id=220, 808.01875pt x 806.01125pt>
 File: moves/core_r_transform.png Graphic file (type png)
 <use moves/core_r_transform.png>
-Package pdftex.def Info: moves/core_r_transform.png  used on input line 85.
+Package pdftex.def Info: moves/core_r_transform.png  used on input line 105.
 (pdftex.def)             Requested size: 80.80661pt x 80.60583pt.
-<moves/core.png, id=204, 808.01875pt x 806.01125pt>
+<moves/core.png, id=221, 808.01875pt x 806.01125pt>
 File: moves/core.png Graphic file (type png)
 <use moves/core.png>
-Package pdftex.def Info: moves/core.png  used on input line 96.
+Package pdftex.def Info: moves/core.png  used on input line 116.
 (pdftex.def)             Requested size: 80.80661pt x 80.60583pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 108--109
+Underfull \hbox (badness 10000) in paragraph at lines 128--129
 
  []
 
-[4 <./cube.png> <./moves/core_r_highlight.png> <./moves/cube_r.png> <./moves/core_r_transform.png> <./moves/core.png>]
-<moves/cubeLp.png, id=223, 808.01875pt x 806.01125pt>
+[5 <./cube.png> <./moves/core_r_highlight.png> <./moves/cube_r.png> <./moves/core_r_transform.png> <./moves/core.png>]
+<moves/cubeLp.png, id=239, 808.01875pt x 806.01125pt>
 File: moves/cubeLp.png Graphic file (type png)
 <use moves/cubeLp.png>
-Package pdftex.def Info: moves/cubeLp.png  used on input line 136.
+Package pdftex.def Info: moves/cubeLp.png  used on input line 156.
 (pdftex.def)             Requested size: 80.80661pt x 80.60583pt.
 
-Overfull \hbox (6.56357pt too wide) in paragraph at lines 142--143
+Overfull \hbox (6.56357pt too wide) in paragraph at lines 162--163
  [][] 
  []
 
-<moves/cubeLpUp.png, id=224, 808.01875pt x 806.01125pt>
+<moves/cubeLpUp.png, id=240, 808.01875pt x 806.01125pt>
 File: moves/cubeLpUp.png Graphic file (type png)
 <use moves/cubeLpUp.png>
-Package pdftex.def Info: moves/cubeLpUp.png  used on input line 146.
+Package pdftex.def Info: moves/cubeLpUp.png  used on input line 166.
 (pdftex.def)             Requested size: 80.80661pt x 80.60583pt.
 
-Overfull \hbox (6.56357pt too wide) in paragraph at lines 152--153
+Overfull \hbox (6.56357pt too wide) in paragraph at lines 172--173
  [][] 
  []
 
-<moves/cubeLpUpRp.png, id=225, 808.01875pt x 806.01125pt>
+<moves/cubeLpUpRp.png, id=241, 808.01875pt x 806.01125pt>
 File: moves/cubeLpUpRp.png Graphic file (type png)
 <use moves/cubeLpUpRp.png>
-Package pdftex.def Info: moves/cubeLpUpRp.png  used on input line 156.
+Package pdftex.def Info: moves/cubeLpUpRp.png  used on input line 176.
 (pdftex.def)             Requested size: 80.80661pt x 80.60583pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 166--167
+Underfull \hbox (badness 10000) in paragraph at lines 186--187
 
  []
 
-[5 <./moves/cubeLp.png> <./moves/cubeLpUp.png> <./moves/cubeLpUpRp.png>]
-<encryption/chain.jpg, id=236, 1818.795pt x 483.8075pt>
+[6 <./moves/cubeLp.png> <./moves/cubeLpUp.png> <./moves/cubeLpUpRp.png>]
+<encryption/chain.jpg, id=252, 1818.795pt x 483.8075pt>
 File: encryption/chain.jpg Graphic file (type jpg)
 <use encryption/chain.jpg>
-Package pdftex.def Info: encryption/chain.jpg  used on input line 174.
+Package pdftex.def Info: encryption/chain.jpg  used on input line 194.
 (pdftex.def)             Requested size: 422.77664pt x 112.45454pt.
-<cubies/cubies_1.png, id=239, 808.01875pt x 806.01125pt>
+<cubies/cubies_1.png, id=255, 808.01875pt x 806.01125pt>
 File: cubies/cubies_1.png Graphic file (type png)
 <use cubies/cubies_1.png>
-Package pdftex.def Info: cubies/cubies_1.png  used on input line 186.
+Package pdftex.def Info: cubies/cubies_1.png  used on input line 206.
 (pdftex.def)             Requested size: 80.80661pt x 80.60583pt.
-<cubies/cubies_2.png, id=240, 808.01875pt x 806.01125pt>
+<cubies/cubies_2.png, id=256, 808.01875pt x 806.01125pt>
 File: cubies/cubies_2.png Graphic file (type png)
 <use cubies/cubies_2.png>
-Package pdftex.def Info: cubies/cubies_2.png  used on input line 189.
+Package pdftex.def Info: cubies/cubies_2.png  used on input line 209.
 (pdftex.def)             Requested size: 80.80661pt x 80.60583pt.
 
-Overfull \hbox (6.56357pt too wide) in paragraph at lines 195--196
+Overfull \hbox (6.56357pt too wide) in paragraph at lines 215--216
  [][] 
  []
 
-<cubies/cubies_3.png, id=241, 808.01875pt x 806.01125pt>
+<cubies/cubies_3.png, id=257, 808.01875pt x 806.01125pt>
 File: cubies/cubies_3.png Graphic file (type png)
 <use cubies/cubies_3.png>
-Package pdftex.def Info: cubies/cubies_3.png  used on input line 199.
+Package pdftex.def Info: cubies/cubies_3.png  used on input line 219.
 (pdftex.def)             Requested size: 80.80661pt x 80.60583pt.
-<cubies/cubies_4.png, id=242, 808.01875pt x 806.01125pt>
+<cubies/cubies_4.png, id=258, 808.01875pt x 806.01125pt>
 File: cubies/cubies_4.png Graphic file (type png)
 <use cubies/cubies_4.png>
-Package pdftex.def Info: cubies/cubies_4.png  used on input line 202.
+Package pdftex.def Info: cubies/cubies_4.png  used on input line 222.
 (pdftex.def)             Requested size: 80.80661pt x 80.60583pt.
-[6 <./encryption/chain.jpg> <./cubies/cubies_1.png> <./cubies/cubies_2.png> <./cubies/cubies_3.png> <./cubies/cubies_4.png>]
-<encryption/bitted-transform.jpg, id=260, 1967.35pt x 348.30125pt>
+[7 <./encryption/chain.jpg> <./cubies/cubies_1.png> <./cubies/cubies_2.png> <./cubies/cubies_3.png> <./cubies/cubies_4.png>]
+<encryption/bitted-transform.jpg, id=277, 1967.35pt x 348.30125pt>
 File: encryption/bitted-transform.jpg Graphic file (type jpg)
 <use encryption/bitted-transform.jpg>
-Package pdftex.def Info: encryption/bitted-transform.jpg  used on input line 218.
+Package pdftex.def Info: encryption/bitted-transform.jpg  used on input line 238.
 (pdftex.def)             Requested size: 422.77664pt x 74.8461pt.
- [7 <./encryption/bitted-transform.jpg>] [8]
-<encryption/encryption.jpg, id=280, 2072.74374pt x 1557.82pt>
+ [8 <./encryption/bitted-transform.jpg>] [9]
+<encryption/encryption.jpg, id=296, 2072.74374pt x 1557.82pt>
 File: encryption/encryption.jpg Graphic file (type jpg)
 <use encryption/encryption.jpg>
-Package pdftex.def Info: encryption/encryption.jpg  used on input line 257.
+Package pdftex.def Info: encryption/encryption.jpg  used on input line 277.
 (pdftex.def)             Requested size: 422.77664pt x 317.73878pt.
- [9 <./encryption/encryption.jpg>] [10]
-<key_gen/keygen.jpg, id=303, 2004.48875pt x 1020.81375pt>
+ [10 <./encryption/encryption.jpg>] [11]
+<key_gen/keygen.jpg, id=320, 2004.48875pt x 1020.81375pt>
 File: key_gen/keygen.jpg Graphic file (type jpg)
 <use key_gen/keygen.jpg>
-Package pdftex.def Info: key_gen/keygen.jpg  used on input line 295.
+Package pdftex.def Info: key_gen/keygen.jpg  used on input line 315.
 (pdftex.def)             Requested size: 469.75502pt x 239.22148pt.
- [11 <./key_gen/keygen.jpg>] [12] (./whitepaper.aux)
+ [12 <./key_gen/keygen.jpg>] [13] (./whitepaper.aux)
 Package rerunfilecheck Info: File `whitepaper.out' has not changed.
-(rerunfilecheck)             Checksum: E6F1133FF402E4A7A4C90E112B862A1D;5199.
+(rerunfilecheck)             Checksum: ACC4DD235D64C5F8B6AF2D02C05B6C5A;5355.
  ) 
 Here is how much of TeX's memory you used:
- 23674 strings out of 479382
- 434646 string characters out of 5869398
- 700281 words of memory out of 5000000
- 41249 multiletter control sequences out of 15000+600000
- 479959 words of font info for 69 fonts, out of 8000000 for 9000
+ 24029 strings out of 479382
+ 440764 string characters out of 5869398
+ 708057 words of memory out of 5000000
+ 41591 multiletter control sequences out of 15000+600000
+ 480128 words of font info for 70 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
  84i,10n,89p,1932b,749s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/opt/local/share/texmf-texlive/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi12.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi8.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr17.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr7.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy8.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti12.pfb></opt/local/share/texmf-texlive/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on whitepaper.pdf (12 pages, 1404496 bytes).
+{/opt/local/share/texmf-texlive/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi12.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi8.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr17.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr7.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy8.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti12.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt12.pfb></opt/local/share/texmf-texlive/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on whitepaper.pdf (13 pages, 1415406 bytes).
 PDF statistics:
- 390 PDF objects out of 1000 (max. 8388607)
- 318 compressed objects within 4 object streams
- 73 named destinations out of 1000 (max. 500000)
- 365 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 412 PDF objects out of 1000 (max. 8388607)
+ 337 compressed objects within 4 object streams
+ 81 named destinations out of 1000 (max. 500000)
+ 373 words of extra memory for PDF output out of 10000 (max. 10000000)
 

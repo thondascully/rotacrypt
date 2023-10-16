@@ -1,34 +1,35 @@
 \contentsline {section}{\numberline {1}Introduction}{3}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Outline}{3}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}Purpose}{3}{subsection.1.2}%
-\contentsline {section}{\numberline {2}The Rubik's Cube}{4}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Review of Rubik's Cubes}{4}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Notation for Cube Operations}{5}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}God's Number}{5}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Combinatorial Explosion with Multiple Cubes}{6}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}Edge and Corner Constraints}{6}{subsection.2.5}%
-\contentsline {subsection}{\numberline {2.6}Per-Cube 24-bit State Space}{7}{subsection.2.6}%
-\contentsline {subsection}{\numberline {2.7}Summary}{8}{subsection.2.7}%
-\contentsline {section}{\numberline {3}Overview}{9}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Initial Round}{9}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Subsequent Rounds}{10}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Final Round}{10}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Intended Usage}{11}{subsection.3.4}%
-\contentsline {section}{\numberline {4}3x3x3 Implementation}{11}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Data Structure Breakdown}{11}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Augmented SPEFFZ Mapping}{11}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Cyclic Transformations}{11}{subsection.4.3}%
-\contentsline {section}{\numberline {5}Key Generation}{11}{section.5}%
-\contentsline {subsection}{\numberline {5.1}4-Cube Initialization}{11}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Master-Key Serialization}{12}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Sub-Key Generation}{12}{subsection.5.3}%
-\contentsline {section}{\numberline {6}Encryption}{12}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Plaintext Setup With S-Box Transformations On Chunks}{12}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Cube Mapping Procedure}{12}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Encryption Algorithm}{12}{subsection.6.3}%
-\contentsline {section}{\numberline {7}Decryption}{12}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Beep Boop}{12}{subsection.7.1}%
-\contentsline {section}{\numberline {8}Security Analysis}{12}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Immediate Reduction to AES}{12}{subsection.8.1}%
-\contentsline {section}{\numberline {9}Codebase Architecture}{12}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Architecture Tree}{12}{subsection.9.1}%
+\contentsline {subsubsection}{\numberline {1.1.1}Rotacrypt Outline}{3}{subsubsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.2}Purpose}{4}{subsection.1.2}%
+\contentsline {section}{\numberline {2}The Rubik's Cube}{5}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Review of Rubik's Cubes}{5}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Notation for Cube Operations}{6}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}God's Number}{6}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Combinatorial Explosion with Multiple Cubes}{7}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Edge and Corner Constraints}{7}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Per-Cube 24-bit State Space}{8}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.7}Summary}{9}{subsection.2.7}%
+\contentsline {section}{\numberline {3}Overview}{10}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Initial Round}{10}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Subsequent Rounds}{11}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Final Round}{11}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Intended Usage}{12}{subsection.3.4}%
+\contentsline {section}{\numberline {4}3x3x3 Implementation}{12}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Data Structure Breakdown}{12}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Augmented SPEFFZ Mapping}{12}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Cyclic Transformations}{12}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Key Generation}{12}{section.5}%
+\contentsline {subsection}{\numberline {5.1}4-Cube Initialization}{12}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Master-Key Serialization}{13}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Sub-Key Generation}{13}{subsection.5.3}%
+\contentsline {section}{\numberline {6}Encryption}{13}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Plaintext Setup With S-Box Transformations On Chunks}{13}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Cube Mapping Procedure}{13}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Encryption Algorithm}{13}{subsection.6.3}%
+\contentsline {section}{\numberline {7}Decryption}{13}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Beep Boop}{13}{subsection.7.1}%
+\contentsline {section}{\numberline {8}Security Analysis}{13}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Immediate Reduction to AES}{13}{subsection.8.1}%
+\contentsline {section}{\numberline {9}Codebase Architecture}{13}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Architecture Tree}{13}{subsection.9.1}%
