@@ -67,9 +67,15 @@ In Section 2, I start by providing a brief overview of the cube's mechanics. I s
     \item \texttt{Summary of the key points of the section}
 \end{verbenumerate}
 
-Before jumping into the technicalities of the scheme, I provide a brief high-level diagram overview in Section 3 accompanied by explanatory text. In Section 4, I detail the programmed implementation of the \textit{3x3x3} cube and its associated data structure with an emphasis on its linearity. This includes subsections on the augmented \textit{SPEFFZ} map transformations and the cyclic transformations. 
+Before jumping into the technicalities of the scheme, I provide a brief high-level diagram overview in Section 3 accompanied by explanatory text. 
 
-In Section 5, I discuss the deserialization algorithm(s) and the overall key generation protocol for primary-key and sub-key generation. In Section 6, I finally dive into the encryption process. To understand Section 6 fully, it is recommend to read through all previous sections, but it is not required. The sections build on each other, but are designed to be understandable in isolation. In Section 7, I discuss the complementing decryption process. In Section 8, ...
+In Section 4, I detail the programmed implementation of the \textit{3x3x3} cube and its associated data structure with an emphasis on its linearity. This includes subsections on the augmented \textit{SPEFFZ} map transformations and the cyclic transformations. 
+
+In Section 5, I discuss the deserialization algorithm(s) and the overall key generation protocol for primary-key and sub-key generation. 
+
+In Section 6, I finally dive into the encryption process. To understand Section 6 fully, it is recommend to read through all previous sections, but it is not required. The sections build on each other, but are designed to be understandable in isolation. 
+
+In Section 7, I discuss the complementing decryption process. In Section 8, ...
 
 \subsection{Purpose}
 There is no purpose. I was advised not to create a cryptosystem, so I did the opposite. As it turns out, the other person was right—so I will be the one to break my own scheme.
@@ -294,12 +300,13 @@ We are chaining blocks to increase diffusion. A blockchain if you must.
 
 (MAYBE... TBD) In the final round, the processed cubes go through an S-box transformation to further improve the security of the encrypted data. This S-box is carefully designed to maximize non-linearity and is dynamically generated based on the cube's final state.
 
-\subsection{Intended Usage}
-<...>
-
 \section{3x3x3 Implementation}
-<...>
 
+In selecting an implementation approach, the conventional choice often centers around the 3x3x3 matrix representation, which involves managing multidimensional arrays and employing matrix operations to facilitate cube rotations. However, I opted for an alternative method: a one-dimensional array consisting of 54 elements. 
+
+This choice was driven by the desire for a more streamlined and memory-efficient approach to represent the Rubik's Cube in the context of our encryption scheme.
+
+The one-dimensional representation not only simplifies the management of the cube's state but also spotlights the intriguing abstract cycles that underlie the cube's mechanics.  
 \subsection{Data Structure Breakdown}
 <...>
 
