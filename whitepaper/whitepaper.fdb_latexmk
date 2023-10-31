@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1697452061 "/Users/thondascully/Projects/rotacrypt/whitepaper/whitepaper.tex" "whitepaper.pdf" "whitepaper" 1697452062 0
-  "/Users/thondascully/Projects/rotacrypt/whitepaper/whitepaper.tex" 1697452061 23675 4fd697cddbd7d54ce904a6a9715ee3a6 ""
+["pdflatex"] 1697525965 "/Users/thondascully/Projects/rotacrypt/whitepaper/whitepaper.tex" "whitepaper.pdf" "whitepaper" 1697525966 0
+  "/Users/thondascully/Projects/rotacrypt/whitepaper/whitepaper.tex" 1697525964 23748 9336d8ccd3b1be38f02bda6dcb501cd1 ""
   "/opt/local/etc/texmf/texmf.cnf" 1678889952 38222 86600ffd55a0fce672e31a15d690ee55 ""
   "/opt/local/share/texmf-texlive/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1556757304 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/opt/local/share/texmf-texlive/fonts/map/fontname/texfonts.map" 1583632499 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -190,10 +190,10 @@
   "moves/cubeLpUp.png" 1697041580 7917 4f4db1fa84a51ecdb8316691e915f323 ""
   "moves/cubeLpUpRp.png" 1697041580 8064 5f447ac5a87cbeb865c0c7183634b59a ""
   "moves/cube_r.png" 1697041580 8053 cda3b1e723255b6a0b88f96a08197009 ""
-  "whitepaper.aux" 1697452062 6037 6b146108aa64842ab5ff34d87dd841cc "pdflatex"
-  "whitepaper.out" 1697452062 5224 cf9060df59fe834a3630bec14a596350 "pdflatex"
-  "whitepaper.tex" 1697452061 23675 4fd697cddbd7d54ce904a6a9715ee3a6 ""
-  "whitepaper.toc" 1697452062 2832 3bd5c712c2eb4ade97a1e2ae6760a770 "pdflatex"
+  "whitepaper.aux" 1697525966 6037 6b146108aa64842ab5ff34d87dd841cc "pdflatex"
+  "whitepaper.out" 1697525966 5224 cf9060df59fe834a3630bec14a596350 "pdflatex"
+  "whitepaper.tex" 1697525964 23748 9336d8ccd3b1be38f02bda6dcb501cd1 ""
+  "whitepaper.toc" 1697525966 2832 3bd5c712c2eb4ade97a1e2ae6760a770 "pdflatex"
   (generated)
   "whitepaper.aux"
   "whitepaper.log"
