@@ -5,7 +5,7 @@ class Cube:
         if initial_state and len(initial_state) == 54:
             self.cube = initial_state
         else:
-            self.cube = [6] * 54
+            self.cube = [-1] * 54
             self.initialize_faces()
 
     def initialize_faces(self):
@@ -59,38 +59,4 @@ class Cube:
             self.face_to_string(face * 9)
             for face in range(6)
         )
-
-class CustomCube(Cube):
-    def get_default_face_color(self, face):
-        bin_ = [
-            0b0000, 
-            0b0000,  
-            0b0000,  
-            0b0000, 
-            0b0000,  
-            0b0000 
-        ]
-        return 0b0000
-
-    def initialize_faces(self):
-        """
-        Override the method to initialize the cube with a custom setup.
-        """
-        for face in range(6):
-            for unit in range(9):
-                self.cube[face * 9 + ordered_face[unit]] = (
-                    self.get_default_face_color(face) if unit % 2 == 0 else 6
-                )
-
-
-# Example usage:
-cube = Cube()
-print("Default Cube:")
-print(cube)
-
-custom_cube = CustomCube()
-print("Custom Cube:")
-print(custom_cube)
-
-custom_cube.algorithm(["F"])
-print(custom_cube)
+        
