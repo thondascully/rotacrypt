@@ -18,3 +18,21 @@ class Block:
     def p(self):
         for cube in self.rotacubes:
             print(f'{cube}\n')
+            
+    def __str__(self):
+        strs = [cube.get_top_face() for cube in self.rotacubes]
+        split_faces = [face.splitlines() for face in strs]        
+        len_cubes = len(self.rotacubes)
+        
+        combined = []
+        for i in range(3):
+            combined_line = " | ".join(face[i] for face in split_faces)
+            combined_line = f"[ {combined_line} ]"
+            combined.append(combined_line)
+         
+        str_ = ""
+        for i in range(len_cubes):
+            str_ = f'{str_}  cube{i + 1} '
+        combined.append(str_)
+        
+        return "\n".join(combined)

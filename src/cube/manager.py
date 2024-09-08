@@ -19,11 +19,9 @@ class Manager:
     
     def p(self):
         for block in self.blocks:
-            block.p()
-            print('--- End of Block ---\n')
+            print(block)
 
-
-bit_sequence = "01101000 01100101 01101100 01101100 01101111 00100000 01110100 01101000 01100101 01110010 01100101 00100000 01101101 01111001 00100000 01101110 01100001 01101101 01100101 00100000 01101001 01110011 00100000 01110100 01100101 01101111".replace(" ", "")
+bit_sequence = "1111111111111111111111111".replace(" ", "")
 
 manager = Manager(bit_sequence)
 manager.p()

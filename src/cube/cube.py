@@ -53,10 +53,14 @@ class Cube:
             f"{identifier_to_color[self.cube[face_start_index + i + 2]]}"
             for i in range(0, 9, 3)
         ) + '\n'
+        
+    def get_top_face(self):
+        return self.face_to_string(0)
 
     def __str__(self):
         return '\n'.join(
             self.face_to_string(face * 9)
             for face in range(6)
         )
+        
         
