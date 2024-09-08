@@ -1,4 +1,4 @@
-import cube
+import src.cube.cube as cube
 
 class Rotacube(cube.Cube):
     def __init__(self, bit_sequence):

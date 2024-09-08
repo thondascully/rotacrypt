@@ -1,4 +1,4 @@
-import rotacube
+import src.cube.rotacube as rotacube
 
 class Block:
     def __init__(self, bit_sequence):

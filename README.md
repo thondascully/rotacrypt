@@ -1,4 +1,4 @@
-__*IN PROGRESS*... how to show cube images without a heavily contrasting background??__
+**_IN PROGRESS_... how to show cube images without a heavily contrasting background??**
 
 # Introduction
 
@@ -10,9 +10,46 @@ Max Park, the current world record holder (11 June 2023) for the 2-handed solve,
 
 > ![cube and moves image](https://github.com/thondascully/rotacrypt/assets/114739901/b79645d3-140b-4958-9ef6-ccbdf340fe01)
 >
-> *A visualization of the R operation (rotating the right layer clockwise).*
+> _A visualization of the R operation (rotating the right layer clockwise)._
 
 Let's dive into the mechanics of the 3x3x3 puzzle. The cube boasts centers, edges, and corners. The single-colored center pieces serve as the invariant axis around which the peripheral smaller unit cubes rotate. The six unit colors are yellow, blue, red, green, orange, and white.
 
 ...
 
+## Project Structure
+```bash
+.
+├── README.md
+├── setup.py
+├── src
+│   ├── block
+│   │   ├── __init__.py
+│   │   └── block.py
+│   ├── configs
+│   │   ├── __init__.py
+│   │   └── settings.cfg
+│   ├── cube
+│   │   ├── __init__.py
+│   │   ├── cube.py
+│   │   └── rotacube.py
+│   ├── key
+│   │   └── __init__.py
+│   ├── manager.py
+│   ├── tests
+│   │   ├── __init__.py
+│   │   └── cube_test.py
+│   ├── tree.py
+│   └── utils
+│       ├── __init__.py
+│       └── util.py
+├── temp_structure.txt
+└── whitepaper
+    ├── cubies
+    ├── encryption
+    ├── key_gen
+    ├── moves
+    ├── whitepaper.pdf
+    └── whitepaper.tex
+
+13 directories, 19 files
+```

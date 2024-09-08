@@ -1,6 +1,6 @@
 import os
 import pytest
-from util import move_to_bit, moves_to_bits, bits_to_moves, xor
+from utils.util import move_to_bit, moves_to_bits, bits_to_moves, xor
 
 
 

@@ -1,4 +1,5 @@
-import block
+import block.block as block
+import tree
 
 class Manager:
     def __init__(self, bit_sequence):
@@ -28,15 +29,13 @@ class Manager:
                 cube.algorithm(['Rp', 'Up', 'Rp', 'Up', 'Fp'])
     
     def p(self):
-        for block in self.blocks:
-            print(block)
+        for i, block in enumerate(self.blocks, start=1):
+            print(f"\nBlock {i}: \n{block}\n")
 
-input_text = "hello world my name is teo and i am a software engineer"
+input_text = "hello world my name is teo"
 bit_sequence = bin(int.from_bytes(input_text.encode(), 'big'))[2:]
 
 manager = Manager(bit_sequence)
 manager.p()
-manager.temp_scramble()
-manager.p()
-manager.temp_unscramble()
-manager.p()
+
+tree.run()
