@@ -17,11 +17,26 @@ class Manager:
         
         return blocks
     
+    def temp_scramble(self):
+        for block in self.blocks:
+            for cube in block.rotacubes:
+                cube.algorithm(['F', 'U', 'R', 'U', 'R'])
+                
+    def temp_unscramble(self):
+        for block in self.blocks:
+            for cube in block.rotacubes:
+                cube.algorithm(['Rp', 'Up', 'Rp', 'Up', 'Fp'])
+    
     def p(self):
         for block in self.blocks:
             print(block)
 
-bit_sequence = "1111111111111111111111111".replace(" ", "")
+input_text = "hello world my name is teo and i am a software engineer"
+bit_sequence = bin(int.from_bytes(input_text.encode(), 'big'))[2:]
 
 manager = Manager(bit_sequence)
+manager.p()
+manager.temp_scramble()
+manager.p()
+manager.temp_unscramble()
 manager.p()
