@@ -1,8 +1,6 @@
 import os
 import pytest
-from utils.util import move_to_bit, moves_to_bits, bits_to_moves, xor
-
-
+from utils.cube_util import move_to_bit, moves_to_bits, bits_to_moves, xor
 
 def test_moves_to_bits():
     moves = ["U", "R", "F", "B", "L", "D"]

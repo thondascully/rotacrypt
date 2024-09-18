@@ -1,4 +1,4 @@
-from utils.util import ordered_face, face_map, face_to_cycles_map, identifier_to_color, ordered_colors
+from src.cube.cube_util import ordered_face, face_map, face_to_cycles_map, identifier_to_color, ordered_colors
 
 class Cube:
     def __init__(self, initial_state=None):

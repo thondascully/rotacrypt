@@ -72,14 +72,6 @@ def string_to_move_compatible_chunks(text: str) -> list[int]:
     return [(ord(char) >> 4) & 0b1111 for char in text] + [ord(char) & 0b1111 for char in text]
 
 
-def test_decrypt(moves: list[str]) -> str:
-    bin_str = moves_to_bits(moves)
-    result = ''
-    while bin_str:
-        result += chr((bin_str >> 8) & 0b11111111)
-        bin_str >>= 8
-    return result
-
 face_to_cycles_map = {
     Face.BACK.value: [
         [27, 29, 31, 33],
